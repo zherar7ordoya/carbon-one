@@ -1,7 +1,7 @@
 {
     "name": "carbon-one",
     "displayName": "Carbon One",
-    "description": "A light theme for readability based on IBM Carbon Design System and Atom One Light theme.",
+    "description": "A light theme for readability based on IBM Carbon Design System and Atom One Light.",
     "version": "2.0.0",
     "publisher": "Gerardo-Tordoya",
     "icon": "icon.png",

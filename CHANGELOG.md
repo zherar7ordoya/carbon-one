@@ -24,6 +24,11 @@ Incorporating insights from **IBM's Carbon Design System** and the elegant econo
 -   The original code colorization proposal lacked a coherent environment. Therefore, to achieve a more complete visual identity, I incorporated elements that I felt aligned with the proposed color scheme.
 -   For the code colorization palette, additional values ​​(always at level 60) from the IBM Carbon System color palette have been added.
 
+## v2.0.1 (_To-Do_)
+
+-   Punctuation: turn to black.
+-   ...
+
 ---
 
 # 🔭 Future Work
