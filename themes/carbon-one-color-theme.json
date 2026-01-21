@@ -9,6 +9,43 @@
     // ENVIRONMENT
     "colors": {
         //
+        // Claude
+        //
+        "sideBar.border": "#d4d0c8", // Warm light border
+        "sideBarSectionHeader.border": "#d4d0c8",
+        "activityBar.border": "#d4d0c8",
+        "activityBar.activeBorder": "#C15F3C", // Crail accent
+        "tab.border": "#d4d0c8",
+        "tab.activeBorder": "#F4F3EE",
+        "tab.activeBorderTop": "#C15F3C", // Crail accent
+        "tab.unfocusedActiveBorderTop": "#d4d0c8",
+        "tab.unfocusedActiveBorder": "#F4F3EE",
+        "tab.lastPinnedBorder": "#B1ADA133", // Cloudy with opacity
+        "titleBar.border": "#d4d0c8",
+        "statusBar.border": "#d4d0c8",
+        "statusBar.focusBorder": "#C15F3C",
+        "statusBarItem.focusBorder": "#C15F3C",
+        "editorGroup.border": "#d4d0c817",
+        "editorGroupHeader.tabsBorder": "#d4d0c8",
+        "panel.border": "#d4d0c8",
+        "panelTitle.activeBorder": "#C15F3C", // Crail
+        "panelInput.border": "#d4d0c8",
+        "button.border": "#00000012",
+        "input.border": "#c5c0b5",
+        "inputOption.activeBorder": "#C15F3C",
+        "dropdown.border": "#c5c0b5",
+        "checkbox.border": "#c5c0b5",
+        "menu.border": "#c5c0b5",
+        "notificationCenter.border": "#d4d0c8",
+        "notifications.border": "#d4d0c8",
+        "terminal.tab.activeBorder": "#C15F3C", // Crail
+        "focusBorder": "#C15F3C", // Crail
+        "widget.border": "#d4d0c8",
+        "editorOverviewRuler.border": "#ebe9e4",
+        "pickerGroup.border": "#c5c0b5",
+        "settings.dropdownBorder": "#c5c0b5",
+        "textBlockQuote.border": "#8f8878",
+        //
         // Windows 12
         //
         "activityBar.background": "#b5bbe7",
