@@ -11,21 +11,21 @@
         //
         // Windows 12
         //
-		"activityBar.background": "#b5bbe7",
-		"activityBar.foreground": "#262734",
-		"activityBar.inactiveForeground": "#262734",
+        "activityBar.background": "#b5bbe7",
+        "activityBar.foreground": "#262734",
+        "activityBar.inactiveForeground": "#262734",
         "activityBar.activeBackground": "#969fe0",
-		"activityBarBadge.background": "#cdcfec",
-		"activityBarBadge.foreground": "#000000",
-		"statusBar.foreground": "#ffffff",
-		"statusBar.background": "#7378d6",
-		"editorSuggestWidget.selectedIconForeground": "#0ca7ea",
-		"editorSuggestWidget.selectedBackground": "#ccdaf9",
-		"sideBar.background": "#fafafa",
-		"sideBar.foreground": "#000000",
-		"sideBarSectionHeader.background": "#cdcffa",
-		"titleBar.activeBackground": "#f5f8ff",
-		"tab.inactiveBackground": "#ebf1ff",
+        "activityBarBadge.background": "#cdcfec",
+        "activityBarBadge.foreground": "#000000",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.background": "#7378d6",
+        "editorSuggestWidget.selectedIconForeground": "#0ca7ea",
+        "editorSuggestWidget.selectedBackground": "#ccdaf9",
+        "sideBar.background": "#fafafa",
+        "sideBar.foreground": "#000000",
+        "sideBarSectionHeader.background": "#cdcffa",
+        "titleBar.activeBackground": "#f5f8ff",
+        "tab.inactiveBackground": "#ebf1ff",
         //
         // Campbell PowerShell
         //
