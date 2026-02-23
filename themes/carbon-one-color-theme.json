@@ -38,10 +38,11 @@
         "tab.inactiveForeground": "#5C6A6A",
         "editorGroupHeader.tabsBackground": "#EDEEEE",
 
+        /* *********************************************************************
         "panel.background": "#F5F6F7",
-
         "panelTitle.activeForeground": "#566D71",
         "panelTitle.inactiveForeground": "#5C6A6A",
+        ********************************************************************* */
 
         "list.activeSelectionBackground": "#d8dcdf",
         "list.activeSelectionForeground": "#303445",
@@ -60,9 +61,12 @@
         "dropdown.background": "#d8dcdf",
         "dropdown.listBackground": "#d8dcdf",
 
+        /* *********************************************************************
         "button.background": "#1D699F",
         "button.foreground": "#F5F6F7",
         "button.hoverBackground": "#63abe3",
+        ********************************************************************* */
+
         "checkbox.foreground": "#566D71",
 
         "badge.background": "#1D699F",
@@ -130,9 +134,11 @@
         "statusBarItem.focusBorder": "#C15F3C",
         "editorGroup.border": "#d4d0c817",
         "editorGroupHeader.tabsBorder": "#d4d0c8",
+        /* *********************************************************************
         "panel.border": "#d4d0c8",
         "panelTitle.activeBorder": "#C15F3C", // Crail
         "panelInput.border": "#d4d0c8",
+        ********************************************************************* */
         "button.border": "#00000012",
         "input.border": "#c5c0b5",
         "inputOption.activeBorder": "#C15F3C",
