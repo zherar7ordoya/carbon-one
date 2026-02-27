@@ -164,7 +164,7 @@
         "input.background": "#EFEBDD",
         "input.foreground": "#141413",
         "input.border": "#BDB6AA",
-        "input.placeholderForeground": "#6B665F",
+        //"input.placeholderForeground": "#6B665F",
         "inputOption.activeBackground": "#B85F3D1a",
         "inputOption.activeBorder": "#B85F3D",
         "inputOption.activeForeground": "#141413",
@@ -194,23 +194,7 @@
         "dropdown.foreground": "#141413",
         "dropdown.border": "#BDB6AA",
         "dropdown.listBackground": "#EFEBDD",
-        "list.activeSelectionBackground": "#B85F3D1a",
 
-        "list.focusBackground": "#B85F3D1a",
-        "list.focusForeground": "#141413",
-        "list.inactiveSelectionBackground": "#B85F3D14",
-
-        "list.activeSelectionIconForeground": "#B85F3D",
-        "list.inactiveSelectionIconForeground": "#B85F3D",
-        "list.focusOutline": "#B85F3D",
-        "list.inactiveFocusOutline": "#B85F3Da6",
-        "list.focusAndSelectionOutline": "#B85F3D",
-        "list.dropBackground": "#B85F3D1a",
-        "list.filterMatchBackground": "#85611B14",
-        "list.filterMatchBorder": "#85611B",
-        "list.highlightForeground": "#B85F3D",
-        "list.errorForeground": "#8F3C2D",
-        "list.warningForeground": "#6B4F1B",
         "menu.background": "#EFEBDD",
         "menu.foreground": "#141413",
         "menu.selectionBackground": "#B85F3D1a",
@@ -232,8 +216,12 @@
         "notificationsErrorIcon.foreground": "#8F3C2D",
         "notificationsWarningIcon.foreground": "#6B4F1B",
         "notificationsInfoIcon.foreground": "#325B86",
+
+        /*
         "badge.background": "#E1DDD1",
         "badge.foreground": "#141413",
+*/
+
         "progressBar.background": "#B85F3D",
         "minimap.background": "#F6F3EA",
         "minimap.findMatchHighlight": "#85611B40",
@@ -360,33 +348,58 @@
         // Campbell Panel
         //
 
-        "panel.border": "#BDB6AA",
-
-        "panelInput.border": "#BDB6AA",
-        "panel.dropBorder": "#B85F3D",
-        "panelSection.border": "#BDB6AA",
-        "panelSection.dropBackground": "#B85F3D14",
-        "panelSectionHeader.background": "#EBE7DC",
-
         // ---
 
- /* EL PROBLEMA ESTÁ EN LAS LISTAS */
+        // --- LISTAS Y NAVEGACIÓN (ESTILO CAMPBELL) ---
 
-        "list.hoverBackground": "#B85F3D14",
-        //"list.hoverForeground": "#FFFFFF",
+        // Texto y Colores Principales
+        "list.activeSelectionForeground": "#FFFFFF", // Blanco puro para lo seleccionado
+        "list.inactiveSelectionForeground": "#CCCCCC", // Gris claro para lo seleccionado pero sin foco
+        "list.hoverForeground": "#F2F2F2", // Blanco brillante al pasar el ratón
+        "list.focusForeground": "#FFFFFF", // Blanco cuando tiene el foco del teclado
 
-        "list.inactiveSelectionForeground": "#CCCCCC",
-        //"list.activeSelectionForeground": "#141413",
+        // Fondos (Usando tu Azul ANSI #0037DA con opacidad)
+        "list.activeSelectionBackground": "#0037DA60", // Azul Campbell con transparencia
+        "list.inactiveSelectionBackground": "#0037DA30", // Un azul más tenue cuando no estás ahí
+        "list.hoverBackground": "#012456", // Tu azul de fondo pero sólido para resaltar
+        "list.focusBackground": "#0037DA40", // Fondo sutil al navegar con flechas
+
+        // Bordes y Outlines (Usando tu Bright Blue #3B78FF)
+        "list.focusOutline": "#3B78FF", // Borde eléctrico de foco
+        "list.focusAndSelectionOutline": "#3B78FF", // Borde cuando está seleccionado y enfocado
+        "list.inactiveFocusOutline": "#3B78FF40", // Borde más suave si pierdes el foco
+
+        // Iconos y Resaltados
+        "list.activeSelectionIconForeground": "#FFFFFF", // Iconos blancos en selección activa
+        "list.inactiveSelectionIconForeground": "#CCCCCC", // Iconos grises en selección inactiva
+        "list.highlightForeground": "#3B78FF", // El color de las letras que coinciden al buscar
+        "list.dropBackground": "#3B78FF20", // Sombra al arrastrar elementos
+
+        // Buscador Interno (Filtros)
+        "list.filterMatchBackground": "#C19C0040", // Usando tu ansiYellow para las coincidencias
+        "list.filterMatchBorder": "#C19C00", // Borde amarillo Campbell
+
+        // Estados de Error/Aviso (Tus colores ANSI Red y Yellow)
+        "list.errorForeground": "#C50F1F", // Rojo Campbell
+        "list.warningForeground": "#C19C00", // Amarillo Campbell
+        // ---
 
         "foreground": "#FFFFFF",
         "editorCursor.foreground": "#FFFFFF",
         "contrastActiveBorder": "#012456",
         "focusBorder": "#012456",
         "panelTitle.activeBorder": "#FFFFFF",
+        "icon.foreground": "#CCCCCC",
+
+        // original gemini
+
         "panel.background": "#012456",
         "panelTitle.activeForeground": "#FFFFFF",
-        "panelTitle.inactiveForeground": "#CCCCCC",
-        "icon.foreground": "#CCCCCC",
+        "panelTitle.inactiveForeground": "#CCCCCC80",
+        "badge.background": "#3B78FF",
+        "badge.foreground": "#FFFFFF",
+        "panel.border": "#012456",
+        //"panelTitle.activeBorder": "#3B78FF",
 
         //
         // Campbell PowerShell
