@@ -395,7 +395,7 @@
         {
             "scope": [],
             "settings": {
-                "foreground": "#8e6a00"
+                "foreground": "#755800"
             }
         },
 
@@ -443,6 +443,14 @@
             ],
             "settings": {
                 "foreground": "#ba4e00"
+            }
+        },
+
+        //////////////// Orange Hover 60
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#9e4200"
             }
         },
 
@@ -509,6 +517,14 @@
             }
         },
 
+        //////////////// Red Hover 60
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#b81922"
+            }
+        },
+
         ///////////////////// Magenta 60
         {
             "scope": [
@@ -523,6 +539,14 @@
             ],
             "settings": {
                 "foreground": "#d02670"
+            }
+        },
+
+        /////////////// Magenta Hover 60
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#b0215f"
             }
         },
 
