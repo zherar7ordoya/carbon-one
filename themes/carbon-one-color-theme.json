@@ -457,12 +457,18 @@
         ///////////////////////// Red 60 ///////////////////////////////////////
         {
             "scope": [
+                "support.type.vendored.property-name",
+                "support.type.property-name",
+                "source.css variable",
+                "source.coffee.embedded",
+                "storage.type",
                 "beginning.punctuation.definition.list.markdown",
                 "constant.language.import-export-all.js",
                 "constant.language.import-export-all.ts",
                 "entity.name.section.markdown",
                 "entity.name.tag",
                 "entity.name.variable.field.cs",
+                "invalid",
                 "keyword.control.default.js",
                 "keyword.control.default.ts",
                 "keyword.control.default.tsx",
@@ -519,7 +525,22 @@
 
         /////////////////// Red Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": [
+                "punctuation.section.embedded.begin.php",
+                "punctuation.section.embedded.end.php",
+                "meta.preprocessor.string",
+                "markup.inline.raw",
+                "entity.name.selector",
+                "entity.other.attribute-name.class.css",
+                "entity.other.attribute-name.id.css",
+                "entity.other.attribute-name.parent.less",
+                "entity.other.attribute-name.parent-selector.css",
+                "entity.other.attribute-name.pseudo-element.css",
+                "entity.other.attribute-name.scss",
+                "source.css entity.other.attribute-name.class",
+                "source.css entity.other.attribute-name.pseudo-class",
+                "source.css.less entity.other.attribute-name.id"
+            ],
             "settings": {
                 "foreground": "#b81922"
             }
@@ -544,7 +565,7 @@
 
         /////////////// Magenta Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": ["constant.regexp"],
             "settings": {
                 "foreground": "#b0215f"
             }
@@ -553,6 +574,35 @@
         ////////////////////// Purple 60 ///////////////////////////////////////
         {
             "scope": [
+                "entity.name.namespace",
+                "entity.other.attribute",
+                "entity.name.scope-resolution",
+                "storage.type.numeric.go",
+                "storage.type.byte.go",
+                "storage.type.boolean.go",
+                "storage.type.string.go",
+                "storage.type.uintptr.go",
+                "storage.type.error.go",
+                "storage.type.rune.go",
+                "storage.type.generic.cs",
+                "storage.type.modifier.cs",
+                "storage.type.variable.cs",
+                "storage.type.annotation.java",
+                "storage.type.generic.java",
+                "storage.type.java",
+                "storage.type.object.array.java",
+                "storage.type.primitive.java",
+                "storage.type.token.java",
+                "storage.type.groovy",
+                "storage.type.annotation.groovy",
+                "storage.type.parameters.groovy",
+                "storage.type.generic.groovy",
+                "storage.type.object.array.groovy",
+                "storage.type.primitive.array.groovy",
+                "storage.type.primitive.groovy",
+                "support.constant.handlebars",
+                "source.powershell variable.other.member",
+                "entity.name.operator.custom-literal",
                 "keyword",
                 "keyword.control",
                 "keyword.operator.expression.in.js",
@@ -612,6 +662,39 @@
         //////////////////////// Blue 60 ///////////////////////////////////////
         {
             "scope": [
+                "variable.language",
+                "keyword.operator.new",
+                "keyword.operator.expression",
+                "keyword.operator.cast",
+                "keyword.operator.sizeof",
+                "keyword.operator.alignof",
+                "keyword.operator.typeid",
+                "keyword.operator.alignas",
+                "keyword.operator.instanceof",
+                "keyword.operator.logical.python",
+                "keyword.operator.wordlike",
+                "punctuation.definition.template-expression.begin",
+                "punctuation.definition.template-expression.end",
+                "string.comment.buffered.block.pug",
+                "string.quoted.pug",
+                "string.interpolated.pug",
+                "string.unquoted.plain.in.yaml",
+                "string.unquoted.plain.out.yaml",
+                "string.unquoted.block.yaml",
+                "string.quoted.single.yaml",
+                "string.quoted.double.xml",
+                "string.quoted.single.xml",
+                "string.unquoted.cdata.xml",
+                "string.quoted.double.html",
+                "string.quoted.single.html",
+                "string.unquoted.html",
+                "string.quoted.single.handlebars",
+                "string.quoted.double.handlebars",
+                "storage.modifier",
+                "keyword.operator.noexcept",
+                "meta.preprocessor",
+                "entity.name.function.preprocessor",
+                "constant.language",
                 "entity.name.function",
                 "entity.name.section",
                 "entity.name.variable.property.cs",
@@ -688,7 +771,24 @@
 
         ////////////////// Cyan Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": [
+                "support.function.git-rebase",
+                "support.constant.property-value",
+                "support.constant.font-name",
+                "support.constant.media-type",
+                "support.constant.media",
+                "constant.other.color.rgb-value",
+                "constant.other.rgb-value",
+                "support.constant.color",
+                "meta.embedded.assembly",
+                "meta.structure.dictionary.key.python",
+                "keyword.operator.minus.exponent",
+                "keyword.operator.plus.exponent",
+                "meta.diff.header",
+                "punctuation.definition.list.begin.markdown",
+                "punctuation.definition.quote.begin.markdown",
+                "variable.other.enummember"
+            ],
             "settings": {
                 "foreground": "#005fa3"
             }
@@ -697,6 +797,8 @@
         //////////////////////// Teal 60 ///////////////////////////////////////
         {
             "scope": [
+                "constant.sha.git-rebase",
+                "meta.preprocessor.numeric",
                 "source.css property-name",
                 "source.css property-value",
                 "source.elixir array",
@@ -767,7 +869,7 @@
 
         ///////////// Cool Gray Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": ["punctuation.definition.tag"],
             "settings": {
                 "foreground": "#585e64"
             }
