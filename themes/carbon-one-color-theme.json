@@ -364,6 +364,10 @@
     /* SYNTAX --------------------------------------------------------------- */
 
     "tokenColors": [
+        {
+            "scope": ["variable.other.object.js"],
+            "settings": { "foreground": "#161616" }
+        },
         ////////////////////// Yellow 60 ///////////////////////////////////////
         {
             "scope": [
@@ -393,7 +397,14 @@
 
         //////////////// Yellow Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": [
+                "entity.name.type.interface.ts",
+                "entity.name.type.interface.tsx",
+                "entity.name.type.alias.ts",
+                "entity.name.type.alias.tsx",
+                "meta.type.parameters.ts",
+                "meta.type.parameters.tsx"
+            ],
             "settings": {
                 "foreground": "#755800"
             }
@@ -457,21 +468,22 @@
         ///////////////////////// Red 60 ///////////////////////////////////////
         {
             "scope": [
-                "support.type.vendored.property-name",
-                "support.type.property-name",
-                "source.css variable",
-                "source.coffee.embedded",
-                "storage.type",
                 "beginning.punctuation.definition.list.markdown",
                 "constant.language.import-export-all.js",
                 "constant.language.import-export-all.ts",
+                "entity.name.operator",
                 "entity.name.section.markdown",
                 "entity.name.tag",
                 "entity.name.variable.field.cs",
                 "invalid",
+                "keyword.control.anchor.regexp",
                 "keyword.control.default.js",
                 "keyword.control.default.ts",
                 "keyword.control.default.tsx",
+                "keyword.operator.or.regexp",
+                "keyword.other.directive.using",
+                "keyword.other.operator",
+                "keyword.other.using",
                 "markup.deleted",
                 "markup.heading",
                 "meta.definition.variable",
@@ -486,6 +498,10 @@
                 "punctuation.definition.variable.shell",
                 "punctuation.separator.key-value.scss",
                 "punctuation.separator.variable.ruby",
+                "source.coffee.embedded",
+                "source.cpp keyword.operator.delete",
+                "source.cpp keyword.operator.new",
+                "source.css variable",
                 "source.elixir embedded.section",
                 "source.elixir embedded.source.empty",
                 "source.elixir keyword.special-method",
@@ -497,13 +513,16 @@
                 "source.json meta.structure.dictionary.json > string.quoted.json",
                 "source.ts support.variable",
                 "source.tsx support.variable",
+                "storage.type",
                 "string.other.link",
                 "support.type.object.module.js",
                 "support.type.object.module.jsx",
                 "support.type.object.module.ts",
                 "support.type.object.module.tsx",
+                "support.type.property-name",
                 "support.type.property-name.json punctuation",
                 "support.type.property-name.json",
+                "support.type.vendored.property-name",
                 "support.variable.dom.js",
                 "support.variable.dom.ts",
                 "support.variable.magic.python",
@@ -526,10 +545,6 @@
         /////////////////// Red Hover 60 ///////////////////////////////////////
         {
             "scope": [
-                "punctuation.section.embedded.begin.php",
-                "punctuation.section.embedded.end.php",
-                "meta.preprocessor.string",
-                "markup.inline.raw",
                 "entity.name.selector",
                 "entity.other.attribute-name.class.css",
                 "entity.other.attribute-name.id.css",
@@ -537,6 +552,10 @@
                 "entity.other.attribute-name.parent-selector.css",
                 "entity.other.attribute-name.pseudo-element.css",
                 "entity.other.attribute-name.scss",
+                "markup.inline.raw",
+                "meta.preprocessor.string",
+                "punctuation.section.embedded.begin.php",
+                "punctuation.section.embedded.end.php",
                 "source.css entity.other.attribute-name.class",
                 "source.css entity.other.attribute-name.pseudo-class",
                 "source.css.less entity.other.attribute-name.id"
@@ -549,11 +568,18 @@
         ///////////////////// Magenta 60 ///////////////////////////////////////
         {
             "scope": [
+                "keyword.operator.negation.regexp",
                 "meta.template.expression.js punctuation.definition",
                 "meta.template.expression.ts punctuation.definition",
+                "punctuation.character.set.begin.regexp",
+                "punctuation.character.set.end.regexp",
+                "punctuation.definition.character-class.regexp",
+                "punctuation.definition.group.assertion.regexp",
+                "punctuation.definition.group.regexp",
                 "punctuation.section.embedded",
                 "source.elixir regexp.section",
                 "source.elixir regexp.string",
+                "support.other.parenthesis.regexp",
                 "token.debug-token",
                 "token.error-token",
                 "variable.interpolation"
@@ -565,7 +591,13 @@
 
         /////////////// Magenta Hover 60 ///////////////////////////////////////
         {
-            "scope": ["constant.regexp"],
+            "scope": [
+                "constant.character.character-class.regexp",
+                "constant.character.set.regexp",
+                "constant.other.character-class.regexp",
+                "constant.other.character-class.set.regexp",
+                "constant.regexp"
+            ],
             "settings": {
                 "foreground": "#b0215f"
             }
@@ -575,34 +607,9 @@
         {
             "scope": [
                 "entity.name.namespace",
-                "entity.other.attribute",
-                "entity.name.scope-resolution",
-                "storage.type.numeric.go",
-                "storage.type.byte.go",
-                "storage.type.boolean.go",
-                "storage.type.string.go",
-                "storage.type.uintptr.go",
-                "storage.type.error.go",
-                "storage.type.rune.go",
-                "storage.type.generic.cs",
-                "storage.type.modifier.cs",
-                "storage.type.variable.cs",
-                "storage.type.annotation.java",
-                "storage.type.generic.java",
-                "storage.type.java",
-                "storage.type.object.array.java",
-                "storage.type.primitive.java",
-                "storage.type.token.java",
-                "storage.type.groovy",
-                "storage.type.annotation.groovy",
-                "storage.type.parameters.groovy",
-                "storage.type.generic.groovy",
-                "storage.type.object.array.groovy",
-                "storage.type.primitive.array.groovy",
-                "storage.type.primitive.groovy",
-                "support.constant.handlebars",
-                "source.powershell variable.other.member",
                 "entity.name.operator.custom-literal",
+                "entity.name.scope-resolution",
+                "entity.other.attribute",
                 "keyword",
                 "keyword.control",
                 "keyword.operator.expression.in.js",
@@ -641,10 +648,35 @@
                 "source.js keyword.operator.of",
                 "source.js keyword.operator.typeof",
                 "source.js keyword.operator.void",
+                "source.powershell variable.other.member",
                 "source.python keyword.operator.logical.python",
                 "storage",
                 "storage.type.annotation",
-                "storage.type.primitive"
+                "storage.type.annotation.groovy",
+                "storage.type.annotation.java",
+                "storage.type.boolean.go",
+                "storage.type.byte.go",
+                "storage.type.error.go",
+                "storage.type.generic.cs",
+                "storage.type.generic.groovy",
+                "storage.type.generic.java",
+                "storage.type.groovy",
+                "storage.type.java",
+                "storage.type.modifier.cs",
+                "storage.type.numeric.go",
+                "storage.type.object.array.groovy",
+                "storage.type.object.array.java",
+                "storage.type.parameters.groovy",
+                "storage.type.primitive",
+                "storage.type.primitive.array.groovy",
+                "storage.type.primitive.groovy",
+                "storage.type.primitive.java",
+                "storage.type.rune.go",
+                "storage.type.string.go",
+                "storage.type.token.java",
+                "storage.type.uintptr.go",
+                "storage.type.variable.cs",
+                "support.constant.handlebars"
             ],
             "settings": {
                 "foreground": "#8a3ffc"
@@ -653,7 +685,14 @@
 
         //////////////// Purple Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": [
+                "entity.name.function.lifecycle.react",
+                "support.function.react",
+                "support.function.next",
+                "entity.name.function.getStaticProps",
+                "entity.name.function.getServerSideProps",
+                "entity.name.function.getStaticPaths"
+            ],
             "settings": {
                 "foreground": "#7822fb"
             }
@@ -662,45 +701,28 @@
         //////////////////////// Blue 60 ///////////////////////////////////////
         {
             "scope": [
-                "variable.language",
-                "keyword.operator.new",
-                "keyword.operator.expression",
-                "keyword.operator.cast",
-                "keyword.operator.sizeof",
-                "keyword.operator.alignof",
-                "keyword.operator.typeid",
-                "keyword.operator.alignas",
-                "keyword.operator.instanceof",
-                "keyword.operator.logical.python",
-                "keyword.operator.wordlike",
-                "punctuation.definition.template-expression.begin",
-                "punctuation.definition.template-expression.end",
-                "string.comment.buffered.block.pug",
-                "string.quoted.pug",
-                "string.interpolated.pug",
-                "string.unquoted.plain.in.yaml",
-                "string.unquoted.plain.out.yaml",
-                "string.unquoted.block.yaml",
-                "string.quoted.single.yaml",
-                "string.quoted.double.xml",
-                "string.quoted.single.xml",
-                "string.unquoted.cdata.xml",
-                "string.quoted.double.html",
-                "string.quoted.single.html",
-                "string.unquoted.html",
-                "string.quoted.single.handlebars",
-                "string.quoted.double.handlebars",
-                "storage.modifier",
-                "keyword.operator.noexcept",
-                "meta.preprocessor",
-                "entity.name.function.preprocessor",
+                "constant.character",
                 "constant.language",
+                "constant.other.option",
                 "entity.name.function",
+                "entity.name.function.preprocessor",
                 "entity.name.section",
                 "entity.name.variable.property.cs",
                 "entity.other.attribute-name.id",
+                "keyword.operator.alignas",
+                "keyword.operator.alignof",
+                "keyword.operator.cast",
+                "keyword.operator.expression",
+                "keyword.operator.instanceof",
+                "keyword.operator.logical.python",
+                "keyword.operator.new",
+                "keyword.operator.noexcept",
+                "keyword.operator.sizeof",
+                "keyword.operator.typeid",
+                "keyword.operator.wordlike",
                 "keyword.other.special-method",
                 "markup.heading punctuation.definition.heading",
+                "meta.preprocessor",
                 "meta.require",
                 "ng.interpolation function.begin",
                 "ng.interpolation function.end",
@@ -708,14 +730,33 @@
                 "ng.interpolation.end",
                 "punctuation.definition.heading",
                 "punctuation.definition.identity",
+                "punctuation.definition.template-expression.begin",
+                "punctuation.definition.template-expression.end",
                 "source.elixir constant.definition",
                 "source.elixir constant.language",
                 "source.elixir constant.numeric",
                 "source.gfm link entity",
+                "storage.modifier",
+                "string.comment.buffered.block.pug",
+                "string.interpolated.pug",
                 "string.other.link.description.markdown",
                 "string.other.link.title.markdown",
+                "string.quoted.double.handlebars",
+                "string.quoted.double.html",
+                "string.quoted.double.xml",
+                "string.quoted.pug",
+                "string.quoted.single.handlebars",
+                "string.quoted.single.html",
+                "string.quoted.single.xml",
+                "string.quoted.single.yaml",
+                "string.unquoted.block.yaml",
+                "string.unquoted.cdata.xml",
+                "string.unquoted.html",
+                "string.unquoted.plain.in.yaml",
+                "string.unquoted.plain.out.yaml",
                 "support.function.any-method",
-                "token.info-token"
+                "token.info-token",
+                "variable.language"
             ],
             "settings": {
                 "foreground": "#0f62fe"
@@ -724,7 +765,14 @@
 
         ////////////////// Blue Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": [
+                "string.template.js",
+                "string.template.jsx",
+                "string.template.ts",
+                "string.template.tsx",
+                "meta.template.expression.js",
+                "meta.template.expression.tsx"
+            ],
             "settings": {
                 "foreground": "#0050e6"
             }
@@ -761,8 +809,8 @@
                 "storage.type.property.ts",
                 "storage.type.property.tsx",
                 "string.regexp",
-                "support.function",
-                "support.type"
+                "support.type",
+                "variable.other.constant"
             ],
             "settings": {
                 "foreground": "#0072c3"
@@ -772,21 +820,22 @@
         ////////////////// Cyan Hover 60 ///////////////////////////////////////
         {
             "scope": [
-                "support.function.git-rebase",
-                "support.constant.property-value",
-                "support.constant.font-name",
-                "support.constant.media-type",
-                "support.constant.media",
                 "constant.other.color.rgb-value",
                 "constant.other.rgb-value",
-                "support.constant.color",
-                "meta.embedded.assembly",
-                "meta.structure.dictionary.key.python",
                 "keyword.operator.minus.exponent",
                 "keyword.operator.plus.exponent",
                 "meta.diff.header",
+                "meta.embedded.assembly",
+                "meta.object-literal.key",
+                "meta.structure.dictionary.key.python",
                 "punctuation.definition.list.begin.markdown",
                 "punctuation.definition.quote.begin.markdown",
+                "support.constant.color",
+                "support.constant.font-name",
+                "support.constant.media",
+                "support.constant.media-type",
+                "support.constant.property-value",
+                "support.function.git-rebase",
                 "variable.other.enummember"
             ],
             "settings": {
@@ -799,12 +848,18 @@
             "scope": [
                 "constant.sha.git-rebase",
                 "meta.preprocessor.numeric",
+                "meta.type.cast.expr",
+                "meta.type.new.expr",
                 "source.css property-name",
                 "source.css property-value",
                 "source.elixir array",
                 "source.elixir scope",
                 "source.elixir section",
-                "source.gfm markup"
+                "source.gfm markup",
+                "support.constant.dom",
+                "support.constant.json",
+                "support.constant.math",
+                "support.function"
             ],
             "settings": {
                 "foreground": "#007d79"
@@ -813,7 +868,11 @@
 
         ////////////////// Teal Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": [
+                "support.constant.environment",
+                "source.prisma keyword.type",
+                "source.prisma entity.name.field"
+            ],
             "settings": {
                 "foreground": "#006b68"
             }
@@ -853,7 +912,11 @@
 
         ///////////////// Green Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": [
+                "markup.inserted.git",
+                "markup.deleted.git",
+                "meta.diff.range.git"
+            ],
             "settings": {
                 "foreground": "#166f31"
             }
@@ -861,7 +924,12 @@
 
         /////////////////// Cool Gray 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": [
+                "punctuation.separator.comma",
+                "punctuation.terminator.statement",
+                "punctuation.separator.key-value",
+                "meta.brace.square"
+            ],
             "settings": {
                 "foreground": "#697077"
             }
@@ -869,7 +937,20 @@
 
         ///////////// Cool Gray Hover 60 ///////////////////////////////////////
         {
-            "scope": ["punctuation.definition.tag"],
+            "scope": [
+                "keyword.operator.arithmetic.js",
+                "keyword.operator.assignment.js",
+                "keyword.operator.comparison.js",
+                "keyword.operator.increment.js",
+                "keyword.operator.logical.js",
+                "keyword.operator.relational.js",
+                "meta.brace",
+                "punctuation.definition.tag"
+                //"variable.other.readwrite.js",
+                //"variable.other.readwrite.jsx",
+                //"variable.other.readwrite.ts",
+                //"variable.other.readwrite.tsx"
+            ],
             "settings": {
                 "foreground": "#585e64"
             }
@@ -906,7 +987,11 @@
 
         ///////////// Warm Gray Hover 60 ///////////////////////////////////////
         {
-            "scope": [],
+            "scope": [
+                "comment.block",
+                "comment.block.documentation",
+                "punctuation.definition.comment.block"
+            ],
             "settings": {
                 "foreground": "#605d5d"
             }
