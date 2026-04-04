@@ -1,22 +1,28 @@
 {
-    /* METADATA ------------------------------------------------------------- */
+    //
+    /* METADATA ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
     "name": "Carbon One",
     "type": "light",
     "semanticHighlighting": false,
     "semanticTokenColors": {},
 
-    /* ENVIRONMENT ---------------------------------------------------------- */
+    /* ENVIRONMENT |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
     "colors": {
-        /////////////////// Warm Burnout ///////////////////////////////////////
-        "actionBar.toggledBackground": "#0000000d",
+        //
+        /* Warm Burnout ----------------------------------------------------- */
+
+        //"actionBar.toggledBackground": "#0000000d",
+        /*
         "activityBar.activeBorder": "#b8522e",
         "activityBar.border": "#DDD6CA",
         "activityBarTop.activeBorder": "#b8522e",
         "activityBarTop.foreground": "#5c5750",
-        "badge.background": "#b8522e",
-        "badge.foreground": "#ffffff",
+        */
+        //"badge.background": "#b8522e",
+        //"badge.foreground": "#ffffff",
+        /*
         "button.background": "#b8522e",
         "button.border": "#0000001a",
         "button.foreground": "#ffffff",
@@ -25,6 +31,8 @@
         "button.secondaryForeground": "#3a3630",
         "button.secondaryHoverBackground": "#0000001a",
         "button.separator": "#ffffff4d",
+        */
+        /*
         "chat.checkpointSeparator": "#544c40",
         "chat.editedFileForeground": "#2868a0",
         "chat.requestBackground": "#EDE6DA",
@@ -33,6 +41,8 @@
         "chat.requestBubbleHoverBackground": "#0000000d",
         "chat.slashCommandBackground": "#2060a033",
         "chat.slashCommandForeground": "#2060a0",
+        */
+        /*
         "commandCenter.activeBackground": "#0000000d",
         "commandCenter.activeBorder": "#00000000",
         "commandCenter.activeForeground": "#5c5750",
@@ -40,20 +50,27 @@
         "commandCenter.border": "#DDD6CA",
         "commandCenter.foreground": "#5c5750",
         "commandCenter.inactiveBorder": "#DDD6CA",
+        */
+        /*
         "debugConsoleInputIcon.foreground": "#b8522e",
         "debugExceptionWidget.background": "#F0E8DC",
         "debugExceptionWidget.border": "#DDD6CA",
         "debugIcon.breakpointDisabledForeground": "#8f441880",
         "debugIcon.breakpointForeground": "#8f4418",
         "debugToolBar.background": "#F0E8DC",
-        "descriptionForeground": "#5c5750",
+        */
+        //"descriptionForeground": "#5c5750",
+        /*
         "diffEditor.diagonalFill": "#00000008",
         "diffEditor.insertedTextBackground": "#22641440",
         "diffEditor.removedTextBackground": "#c4304040",
-        "disabledForeground": "#5c575050",
+        */
+        //"disabledForeground": "#5c575050",
+        /*
         "dropdown.background": "#F0E8DC",
         "dropdown.border": "#DDD6CA",
         "dropdown.foreground": "#5c5750",
+        */
         "editor.findMatchBackground": "#E0C890",
         "editor.findMatchHighlightBackground": "#E0C890A0",
         "editor.inactiveSelectionBackground": "#8aa8b83a",
@@ -315,7 +332,8 @@
         "widget.border": "#0000000d",
         "widget.shadow": "#00000033",
 
-        ///////////////////// Windows 12 ///////////////////////////////////////
+        /* Windows 12 ------------------------------------------------------- */
+
         "activityBar.background": "#b5bbe7",
         "activityBar.foreground": "#262734",
         "activityBar.inactiveForeground": "#262734",
@@ -332,7 +350,8 @@
         "titleBar.activeBackground": "#EDE6DA",
         "tab.inactiveBackground": "#ebf1ff",
 
-        //////////// Campbell PowerShell ///////////////////////////////////////
+        /* Campbell PowerShell ---------------------------------------------- */
+
         "terminal.ansiBlack": "#0C0C0C",
         "terminal.ansiBlue": "#0037DA",
         "terminal.ansiBrightBlack": "#767676",
@@ -356,14 +375,18 @@
         "terminalCursor.background": "#CCCCCC",
         "terminalCursor.foreground": "#FFFFFF",
 
-        ///////////////////// IBM Carbon ///////////////////////////////////////
+        /* IBM Carbon (Gray 10 Schema) -------------------------------------- */
+
         "editor.background": "#f4f4f4",
         "editor.foreground": "#161616"
     },
 
-    /* SYNTAX --------------------------------------------------------------- */
+    /* SYNTAX ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
     "tokenColors": [
+        //
+        /* RESET (Gray 100) ------------------------------------------------- */
+
         {
             "scope": [
                 "keyword.operator",
@@ -376,7 +399,9 @@
             ],
             "settings": { "foreground": "#161616" }
         },
-        ////////////////////// Yellow 60 ///////////////////////////////////////
+
+        /* Yellow 60 -------------------------------------------------------- */
+
         {
             "scope": [
                 "entity.name.class",
@@ -395,7 +420,8 @@
             }
         },
 
-        //////////////// Yellow Hover 60 ///////////////////////////////////////
+        /* Yellow Hover 60 -------------------------------------------------- */
+
         {
             "scope": [
                 "entity.name.type.interface.ts",
@@ -410,7 +436,8 @@
             }
         },
 
-        ////////////////////// Orange 60 ///////////////////////////////////////
+        /* Orange 60 -------------------------------------------------------- */
+
         {
             "scope": [
                 "constant",
@@ -444,19 +471,21 @@
             }
         },
 
-        //////////////// Orange Hover 60 ///////////////////////////////////////
+        /* Orange Hover 60 -------------------------------------------------- */
+
         {
-            "scope": [],
+            "scope": [
+                /* NOT ASSIGNED */
+            ],
             "settings": {
                 "foreground": "#9e4200"
             }
         },
 
-        ///////////////////////// Red 60 ///////////////////////////////////////
+        /* Red 60 ----------------------------------------------------------- */
+
         {
             "scope": [
-                "constant.language.import-export-all.js",
-                "constant.language.import-export-all.ts",
                 "entity.name.operator",
                 "entity.name.section.markdown",
                 "entity.name.tag",
@@ -512,7 +541,8 @@
             }
         },
 
-        /////////////////// Red Hover 60 ///////////////////////////////////////
+        /* Red Hover 60 ----------------------------------------------------- */
+
         {
             "scope": [
                 "entity.name.selector",
@@ -533,7 +563,8 @@
             }
         },
 
-        ///////////////////// Magenta 60 ///////////////////////////////////////
+        /* Magenta 60 ------------------------------------------------------- */
+
         {
             "scope": [
                 "support.other.parenthesis.regexp",
@@ -546,7 +577,8 @@
             }
         },
 
-        /////////////// Magenta Hover 60 ///////////////////////////////////////
+        /* Magenta Hover 60 ------------------------------------------------- */
+
         {
             "scope": [
                 "constant.character.character-class.regexp",
@@ -560,7 +592,8 @@
             }
         },
 
-        ////////////////////// Purple 60 ///////////////////////////////////////
+        /* Purple 60 -------------------------------------------------------- */
+
         {
             "scope": [
                 "entity.name.namespace",
@@ -584,7 +617,8 @@
             }
         },
 
-        //////////////// Purple Hover 60 ///////////////////////////////////////
+        /* Purple Hover 60 -------------------------------------------------- */
+
         {
             "scope": [
                 "entity.name.function.lifecycle.react",
@@ -599,7 +633,8 @@
             }
         },
 
-        //////////////////////// Blue 60 ///////////////////////////////////////
+        /* Blue 60 ---------------------------------------------------------- */
+
         {
             "scope": [
                 "constant.character",
@@ -637,7 +672,8 @@
             }
         },
 
-        ////////////////// Blue Hover 60 ///////////////////////////////////////
+        /* Blue Hover 60 ---------------------------------------------------- */
+
         {
             "scope": [
                 "string.template.js",
@@ -654,7 +690,8 @@
             }
         },
 
-        //////////////////////// Cyan 60 ///////////////////////////////////////
+        /* Cyan 60 ---------------------------------------------------------- */
+
         {
             "scope": [
                 "constant.character.escape",
@@ -677,7 +714,8 @@
             }
         },
 
-        ////////////////// Cyan Hover 60 ///////////////////////////////////////
+        /* Cyan Hover 60 ---------------------------------------------------- */
+
         {
             "scope": [
                 "constant.other.color.rgb-value",
@@ -697,7 +735,8 @@
             }
         },
 
-        //////////////////////// Teal 60 ///////////////////////////////////////
+        /* Teal 60 ---------------------------------------------------------- */
+
         {
             "scope": [
                 "constant.sha.git-rebase",
@@ -717,7 +756,8 @@
             }
         },
 
-        ////////////////// Teal Hover 60 ///////////////////////////////////////
+        /* Teal Hover 60 ---------------------------------------------------- */
+
         {
             "scope": [
                 "support.constant.environment",
@@ -729,7 +769,8 @@
             }
         },
 
-        /////////////////////// Green 60 ///////////////////////////////////////
+        /* Green 60 --------------------------------------------------------- */
+
         {
             "scope": [
                 "entity.name.type.module.js",
@@ -748,7 +789,8 @@
             }
         },
 
-        ///////////////// Green Hover 60 ///////////////////////////////////////
+        /* Green Hover 60 --------------------------------------------------- */
+
         {
             "scope": [
                 "markup.inserted.git",
@@ -760,23 +802,30 @@
             }
         },
 
-        /////////////////// Cool Gray 60 ///////////////////////////////////////
+        /* Cool Gray 60 ----------------------------------------------------- */
+
         {
-            "scope": [],
+            "scope": [
+                /* NOT ASSIGNED */
+            ],
             "settings": {
                 "foreground": "#697077"
             }
         },
 
-        ///////////// Cool Gray Hover 60 ///////////////////////////////////////
+        /* Cool Gray Hover 60 ----------------------------------------------- */
+
         {
-            "scope": [],
+            "scope": [
+                /* NOT ASSIGNED */
+            ],
             "settings": {
                 "foreground": "#585e64"
             }
         },
 
-        //////////////////////// Gray 60 ///////////////////////////////////////
+        /* Gray 60 ---------------------------------------------------------- */
+
         {
             "scope": ["comment", "markup.quote.markdown"],
             "settings": {
@@ -785,25 +834,34 @@
             }
         },
 
-        ////////////////// Gray Hover 60 ///////////////////////////////////////
+        /* Gray Hover 60 ---------------------------------------------------- */
+
         {
-            "scope": [],
+            "scope": [
+                /* NOT ASSIGNED */
+            ],
             "settings": {
                 "foreground": "#5e5e5e"
             }
         },
 
-        /////////////////// Warm Gray 60 ///////////////////////////////////////
+        /* Warm Gray 60 ----------------------------------------------------- */
+
         {
-            "scope": [],
+            "scope": [
+                /* NOT ASSIGNED */
+            ],
             "settings": {
                 "foreground": "#726e6e"
             }
         },
 
-        ///////////// Warm Gray Hover 60 ///////////////////////////////////////
+        /* Warm Gray Hover 60 ----------------------------------------------- */
+
         {
-            "scope": [],
+            "scope": [
+                /* NOT ASSIGNED */
+            ],
             "settings": {
                 "foreground": "#605d5d"
             }
