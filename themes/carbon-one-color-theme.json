@@ -367,6 +367,8 @@
         {
             "scope": [
                 "keyword.operator",
+                "meta.brace",
+                "punctuation",
                 "variable.other.object.js",
                 "variable.other.object.jsx",
                 "variable.other.object.ts",
@@ -386,16 +388,6 @@
                 "meta.array.literal.ts variable",
                 "meta.array.literal.tsx variable",
                 "meta.class",
-                "ng.attribute-with-value attribute-name",
-                "punctuation.definition.bold",
-                "source.elixir variable.constant",
-                "source.java storage.modifier.import",
-                /*
-                "source.java storage.type",
-                "storage.type.cs",
-                "storage.type.primitive.array.java",
-                */
-                "string.regexp source.ruby.embedded",
                 "support.class"
             ],
             "settings": {
@@ -422,10 +414,8 @@
         {
             "scope": [
                 "constant",
-                "constant.character.format.placeholder.other.python storage",
                 "constant.numeric",
                 "constant.variable",
-                "entity.name.lifetime.rust",
                 "entity.other.attribute-name",
                 "keyword.other.unit",
                 "markup.bold",
@@ -433,32 +423,21 @@
                 "meta.array-binding-pattern-variable.js variable.other.readwrite.js",
                 "meta.array-binding-pattern-variable.ts variable.other.readwrite.ts",
                 "meta.array-binding-pattern-variable.tsx variable.other.readwrite.tsx",
-                "meta.attribute.rust",
-                "meta.function.parameters.python",
                 "meta.link",
-                "ng.interpolation bool",
-                "punctuation.definition.bold.markdown",
-                "punctuation.definition.constant.css",
-                "punctuation.definition.constant.scss",
-                //"source.elixir keyword.operator",
-                "source.elixir parameter.variable.function",
-                "source.elixir separator",
-                "source.python constant",
-                "source.python variable.parameter",
                 "support.constant",
                 "token.warn-token",
                 "variable.other.constant.js",
                 "variable.other.constant.jsx",
+                "variable.other.constant.ts",
+                "variable.other.constant.tsx",
                 "variable.other.constant.object.js",
                 "variable.other.constant.object.jsx",
                 "variable.other.constant.object.ts",
                 "variable.other.constant.object.tsx",
                 "variable.other.constant.property.js",
+                "variable.other.constant.property.jsx",
                 "variable.other.constant.property.ts",
-                "variable.other.constant.property.tsx",
-                "variable.other.constant.ruby",
-                "variable.other.constant.ts",
-                "variable.other.constant.tsx"
+                "variable.other.constant.property.tsx"
             ],
             "settings": {
                 "foreground": "#ba4e00"
@@ -476,19 +455,16 @@
         ///////////////////////// Red 60 ///////////////////////////////////////
         {
             "scope": [
-                "beginning.punctuation.definition.list.markdown",
                 "constant.language.import-export-all.js",
                 "constant.language.import-export-all.ts",
                 "entity.name.operator",
                 "entity.name.section.markdown",
                 "entity.name.tag",
-                "entity.name.variable.field.cs",
                 "invalid",
                 "keyword.control.anchor.regexp",
                 "keyword.control.default.js",
                 "keyword.control.default.ts",
                 "keyword.control.default.tsx",
-                //"keyword.operator.or.regexp",
                 "keyword.other.directive.using",
                 "keyword.other.operator",
                 "keyword.other.using",
@@ -499,44 +475,30 @@
                 "meta.export.default.ts variable.other.readwrite.ts",
                 "meta.object-literal.key.js",
                 "meta.object-literal.key.ts",
-                "ng.interpolation function",
-                "ng.interpolation",
-                "punctuation.definition.heading.markdown",
-                "punctuation.definition.variable.php",
-                "punctuation.definition.variable.shell",
-                "punctuation.separator.key-value.scss",
-                "punctuation.separator.variable.ruby",
-                "source.coffee.embedded",
-                //"source.cpp keyword.operator.delete",
-                //"source.cpp keyword.operator.new",
                 "source.css variable",
-                "source.elixir embedded.section",
-                "source.elixir embedded.source.empty",
-                "source.elixir keyword.special-method",
-                "source.elixir readwrite.module punctuation",
                 "source.ini keyword.other.definition.ini",
-                "source.java-properties meta.key-pair",
                 "source.js support.variable",
-                "source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string",
                 "source.json meta.structure.dictionary.json > string.quoted.json",
                 "source.ts support.variable",
                 "source.tsx support.variable",
-
                 "string.other.link",
                 "support.type.object.module.js",
                 "support.type.object.module.jsx",
                 "support.type.object.module.ts",
                 "support.type.object.module.tsx",
                 "support.type.property-name",
-                "support.type.property-name.json punctuation",
                 "support.type.property-name.json",
                 "support.type.vendored.property-name",
                 "support.variable.dom.js",
+                "support.variable.dom.jsx",
                 "support.variable.dom.ts",
-                "support.variable.magic.python",
+                "support.variable.dom.tsx",
                 "support.variable.property.dom.js",
+                "support.variable.property.dom.jsx",
                 "support.variable.property.dom.ts",
+                "support.variable.property.dom.tsx",
                 "support.variable.property.js",
+                "support.variable.property.jsx",
                 "support.variable.property.ts",
                 "support.variable.property.tsx",
                 "variable",
@@ -562,8 +524,6 @@
                 "entity.other.attribute-name.scss",
                 "markup.inline.raw",
                 "meta.preprocessor.string",
-                "punctuation.section.embedded.begin.php",
-                "punctuation.section.embedded.end.php",
                 "source.css entity.other.attribute-name.class",
                 "source.css entity.other.attribute-name.pseudo-class",
                 "source.css.less entity.other.attribute-name.id"
@@ -576,17 +536,6 @@
         ///////////////////// Magenta 60 ///////////////////////////////////////
         {
             "scope": [
-                //"keyword.operator.negation.regexp",
-                "meta.template.expression.js punctuation.definition",
-                "meta.template.expression.ts punctuation.definition",
-                "punctuation.character.set.begin.regexp",
-                "punctuation.character.set.end.regexp",
-                "punctuation.definition.character-class.regexp",
-                "punctuation.definition.group.assertion.regexp",
-                "punctuation.definition.group.regexp",
-                "punctuation.section.embedded",
-                "source.elixir regexp.section",
-                "source.elixir regexp.string",
                 "support.other.parenthesis.regexp",
                 "token.debug-token",
                 "token.error-token",
@@ -621,79 +570,13 @@
                 "keyword",
                 "keyword.control",
                 "keyword.operator.expression",
-                /*
-                "keyword.operator.expression.in.js",
-                "keyword.operator.expression.in.jsx",
-                "keyword.operator.expression.in.ts",
-                "keyword.operator.expression.in.tsx",
-                "keyword.operator.expression.instanceof.js",
-                "keyword.operator.expression.instanceof.ts",
-                "keyword.operator.expression.instanceof.tsx",
-                "keyword.operator.expression.of.js",
-                "keyword.operator.expression.of.ts",
-                "keyword.operator.expression.of.tsx",
-                "keyword.operator.new.j",
-                "keyword.operator.new.ts",
-                "keyword.operator.new.tsx",
-                */
-                "keyword.other.unsafe.rust",
                 "markup.changed",
                 "markup.italic",
                 "markup.underline.link.image.markdown",
                 "markup.underline.link.markdown",
                 "meta.selector",
-                "ng.attribute-with-value string",
-                "punctuation.definition.italic",
-                "punctuation.definition.metadata.markdown",
-                /*
-                "source.c keyword.operator",
-                "source.cpp keyword.operator",
-                "source.cs keyword.operator",
-                */
-                "source.elixir variable.anonymous",
-                "source.elixir variable.definition",
-                //"source.go storage.type.string",
-                /*
-                "source.java keyword.operator.instanceof",
-                "source.js keyword.operator.delete",
-                "source.js keyword.operator.in",
-                "source.js keyword.operator.instanceof",
-                "source.js keyword.operator.new",
-                "source.js keyword.operator.of",
-                "source.js keyword.operator.typeof",
-                "source.js keyword.operator.void",
-                */
                 "source.powershell variable.other.member",
-                //"source.python keyword.operator.logical.python",
                 "storage",
-                /*
-                "storage.type",
-                "storage.type.annotation",
-                "storage.type.annotation.groovy",
-                "storage.type.annotation.java",
-                "storage.type.boolean.go",
-                "storage.type.byte.go",
-                "storage.type.error.go",
-                "storage.type.generic.cs",
-                "storage.type.generic.groovy",
-                "storage.type.generic.java",
-                "storage.type.groovy",
-                "storage.type.java",
-                "storage.type.modifier.cs",
-                "storage.type.numeric.go",
-                "storage.type.object.array.groovy",
-                "storage.type.object.array.java",
-                "storage.type.parameters.groovy",
-                "storage.type.primitive",
-                "storage.type.primitive.array.groovy",
-                "storage.type.primitive.groovy",
-                "storage.type.primitive.java",
-                "storage.type.rune.go",
-                "storage.type.string.go",
-                "storage.type.token.java",
-                "storage.type.uintptr.go",
-                "storage.type.variable.cs",
-                */
                 "support.constant.handlebars"
             ],
             "settings": {
@@ -725,47 +608,17 @@
                 "entity.name.function",
                 "entity.name.function.preprocessor",
                 "entity.name.section",
-                "entity.name.variable.property.cs",
                 "entity.other.attribute-name.id",
-
-                /*
-                "keyword.operator.alignas",
-                "keyword.operator.alignof",
-                "keyword.operator.cast",
-                
-                "keyword.operator.instanceof",
-                "keyword.operator.logical.python",
-                "keyword.operator.new",
-                "keyword.operator.noexcept",
-                "keyword.operator.sizeof",
-                "keyword.operator.typeid",
-                "keyword.operator.wordlike",
-                */
                 "keyword.other.special-method",
-                "markup.heading punctuation.definition.heading",
                 "meta.preprocessor",
                 "meta.require",
-                "ng.interpolation function.begin",
-                "ng.interpolation function.end",
-                "ng.interpolation.begin",
-                "ng.interpolation.end",
-                "punctuation.definition.heading",
-                "punctuation.definition.identity",
-                "punctuation.definition.template-expression.begin",
-                "punctuation.definition.template-expression.end",
-                "source.elixir constant.definition",
-                "source.elixir constant.language",
-                "source.elixir constant.numeric",
                 "source.gfm link entity",
                 "storage.modifier",
-                "string.comment.buffered.block.pug",
-                "string.interpolated.pug",
                 "string.other.link.description.markdown",
                 "string.other.link.title.markdown",
                 "string.quoted.double.handlebars",
                 "string.quoted.double.html",
                 "string.quoted.double.xml",
-                "string.quoted.pug",
                 "string.quoted.single.handlebars",
                 "string.quoted.single.html",
                 "string.quoted.single.xml",
@@ -792,6 +645,8 @@
                 "string.template.ts",
                 "string.template.tsx",
                 "meta.template.expression.js",
+                "meta.template.expression.jsx",
+                "meta.template.expression.ts",
                 "meta.template.expression.tsx"
             ],
             "settings": {
@@ -803,38 +658,16 @@
         {
             "scope": [
                 "constant.character.escape",
+                "constant.language.import-export-all.js",
                 "constant.language.import-export-all.jsx",
+                "constant.language.import-export-all.ts",
                 "constant.language.import-export-all.tsx",
                 "constant.language.json",
                 "constant.other.color",
                 "constant.other.symbol",
-                "entity.name.type.rust",
                 "markup.link",
-                "ng.tag",
-                "punctuation.separator.key-value.js",
-                "punctuation.separator.key-value.ts",
-                "punctuation.separator.key-value.tsx",
-                /*
-                "source.flow keyword.operator",
-                "source.js keyword.operator",
-                "source.js.embedded.html keyword.operator",
-                */
                 "source.json meta.structure.array.json > constant.language.json",
                 "source.json meta.structure.dictionary.json > constant.language.json",
-                /*
-                "source.ts keyword.operator",
-                "source.ts keyword.operator",
-                "source.ts.embedded.html keyword.operator",
-                "source.tsx keyword.operator",
-                */
-                "storage.class.std.rust",
-                /*
-                "storage.type.core.rust",
-                "storage.type.property.js",
-                "storage.type.property.jsx",
-                "storage.type.property.ts",
-                "storage.type.property.tsx",
-                */
                 "string.regexp",
                 "support.type",
                 "variable.other.constant"
@@ -849,14 +682,8 @@
             "scope": [
                 "constant.other.color.rgb-value",
                 "constant.other.rgb-value",
-                //"keyword.operator.minus.exponent",
-                //"keyword.operator.plus.exponent",
                 "meta.diff.header",
-                "meta.embedded.assembly",
                 "meta.object-literal.key",
-                "meta.structure.dictionary.key.python",
-                "punctuation.definition.list.begin.markdown",
-                "punctuation.definition.quote.begin.markdown",
                 "support.constant.color",
                 "support.constant.font-name",
                 "support.constant.media",
@@ -879,9 +706,6 @@
                 "meta.type.new.expr",
                 "source.css property-name",
                 "source.css property-value",
-                "source.elixir array",
-                "source.elixir scope",
-                "source.elixir section",
                 "source.gfm markup",
                 "support.constant.dom",
                 "support.constant.json",
@@ -908,29 +732,16 @@
         /////////////////////// Green 60 ///////////////////////////////////////
         {
             "scope": [
-                "entity.name.type.module.js,entity.name.type.module.ts,entity.name.type.module.jsx,entity.name.type.module.tsx",
-                //"keyword.operator.other.ruby",
+                "entity.name.type.module.js",
+                "entity.name.type.module.ts",
+                "entity.name.type.module.jsx",
+                "entity.name.type.module.tsx",
                 "markup.inline.raw.markdown",
                 "markup.inserted",
                 "markup.raw",
-                "meta.template.expression.js string.quoted punctuation.definition",
-                "meta.template.expression.js string.template punctuation.definition.string.template",
-                "meta.template.expression.jsx string.quoted punctuation.definition",
-                "meta.template.expression.jsx string.template punctuation.definition.string.template",
-                "meta.template.expression.ts string.quoted punctuation.definition",
-                "meta.template.expression.ts string.template punctuation.definition.string.template",
-                "meta.template.expression.tsx string.quoted punctuation.definition",
-                "meta.template.expression.tsx string.template punctuation.definition.string.template",
-                "source.elixir quoted",
-                "source.js meta.template.expression.js punctuation.accessor",
-                "source.json meta.structure.array.json > value.json > string.quoted.json > punctuation",
                 "source.json meta.structure.array.json > value.json > string.quoted.json",
-                "source.json meta.structure.dictionary.json > value.json > string.quoted.json > punctuation",
                 "source.json meta.structure.dictionary.json > value.json > string.quoted.json",
-                "source.ts meta.template.expression.ts punctuation.accessor",
-                "source.tsx meta.template.expression.tsx punctuation.accessor",
-                "string",
-                "string.quoted.double punctuation"
+                "string"
             ],
             "settings": {
                 "foreground": "#198038"
@@ -951,12 +762,7 @@
 
         /////////////////// Cool Gray 60 ///////////////////////////////////////
         {
-            "scope": [
-                "punctuation.separator.comma",
-                "punctuation.terminator.statement",
-                "punctuation.separator.key-value",
-                "meta.brace.square"
-            ],
+            "scope": [],
             "settings": {
                 "foreground": "#697077"
             }
@@ -964,22 +770,7 @@
 
         ///////////// Cool Gray Hover 60 ///////////////////////////////////////
         {
-            "scope": [
-                /*
-                "keyword.operator.arithmetic.js",
-                "keyword.operator.assignment.js",
-                "keyword.operator.comparison.js",
-                "keyword.operator.increment.js",
-                "keyword.operator.logical.js",
-                "keyword.operator.relational.js",
-                */
-                "meta.brace",
-                "punctuation.definition.tag"
-                //"variable.other.readwrite.js",
-                //"variable.other.readwrite.jsx",
-                //"variable.other.readwrite.ts",
-                //"variable.other.readwrite.tsx"
-            ],
+            "scope": [],
             "settings": {
                 "foreground": "#585e64"
             }
@@ -987,14 +778,10 @@
 
         //////////////////////// Gray 60 ///////////////////////////////////////
         {
-            "scope": [
-                "comment markup.link",
-                "comment",
-                "markup.quote.markdown",
-                "punctuation.definition.comment"
-            ],
+            "scope": ["comment", "markup.quote.markdown"],
             "settings": {
-                "foreground": "#6f6f6f"
+                "foreground": "#6f6f6f",
+                "fontStyle": "italic"
             }
         },
 
@@ -1016,11 +803,7 @@
 
         ///////////// Warm Gray Hover 60 ///////////////////////////////////////
         {
-            "scope": [
-                "comment.block",
-                "comment.block.documentation",
-                "punctuation.definition.comment.block"
-            ],
+            "scope": [],
             "settings": {
                 "foreground": "#605d5d"
             }
