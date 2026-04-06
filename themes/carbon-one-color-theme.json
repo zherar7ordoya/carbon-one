@@ -12,35 +12,42 @@
     "colors": {
         //
 
-        /* Real Rascal  ----------------------------------------------------- */
+        /* Real Rascal ----------------------------------------------------- */
 
-        "activityBar.border": "#21272A", // Gray 90
-        "button.background": "#2DA44E",
-        "editorGroup.border": "#21272A", // Gray 90
-        "editorGroupHeader.tabsBorder": "#21272A", // Gray 90
-        "input.background": "#EDE6DA",
-        "input.border": "#21272A", // Gray 90
-        "inputOption.activeForeground": "#B8522E",
-        "panel.background": "#EDE6DA",
-        "panel.border": "#21272A", // Gray 90
-        "panelTitle.activeBorder": "#B8522E",
-        "sideBar.border": "#21272A", // Gray 90
+        // Gray 90 (Border)
+        "editorGroupHeader.tabsBorder": "#21272A",
+        "input.border": "#21272A",
+        "notificationToast.border": "#21272A",
+        "panel.border": "#21272A",
+        "sideBar.border": "#21272A",
+        "tab.border": "#21272A",
+        "titleBar.border": "#21272A",
+
+        // Gray 10 (Makeup: Default Editor Background Color)
         "tab.activeBackground": "#F4F4F4",
-        "tab.activeBorder": "#F4F4F4", // Gray 10
-        "statusBar.border": "#21272A", // Gray 90
-        "tab.border": "#21272A", // Gray 90
-        "titleBar.border": "#21272A", // Gray 90
+        "tab.activeBorder": "#F4F4F4",
+
+        "button.background": "#2DA44E",
+
+        "inputOption.activeForeground": "#B8522E",
+        "panelTitle.activeBorder": "#B8522E",
 
         /* Windows 12 ------------------------------------------------------- */
 
-        "activityBar.activeBackground": "#969fe0",
-        "activityBar.background": "#b5bbe7",
+        "activityBar.activeBackground": "#969FE0",
+        "activityBar.background": "#B5BBE7",
         "activityBar.foreground": "#262734",
         "activityBar.inactiveForeground": "#262734",
-        "sideBar.background": "#fcf4d6", // Yellow 10
-        "sideBar.foreground": "#21272A", // Gray 90
-        "statusBar.background": "#7378d6",
-        "titleBar.activeBackground": "#EDE6DA",
+        "sideBar.background": "#E4E4F2",
+        "sideBar.foreground": "#000000",
+        "statusBar.background": "#7378D6",
+        // Tweaks (Warm Burnout)
+        "activityBar.border": "#B5BBE7",
+        "editorGroupHeader.tabsBackground": "#EDE6DA", // Invited
+        "input.background": "#EDE6DA", // Invited
+        "panel.background": "#EDE6DA", // Invited
+        "statusBar.border": "#7378D6", // Invited
+        "titleBar.activeBackground": "#EDE6DA", // Native to W12C
 
         /* Campbell PowerShell ---------------------------------------------- */
 
@@ -60,10 +67,19 @@
         "terminal.ansiRed": "#C50F1F",
         "terminal.ansiWhite": "#CCCCCC",
         "terminal.ansiYellow": "#C19C00",
+
         "terminal.background": "#012456",
         "terminal.foreground": "#CCCCCC",
-        "terminalCursor.background": "#FFFFFF",
+
+        //"terminalCursor.background": "#CCCCCC",
         "terminalCursor.foreground": "#FFFFFF",
+
+        "terminalCursor.background": "#E74856",
+
+        //"terminal.border": "#012456",
+        //"terminal.selectionBackground": "#FFFFFF",
+        "terminal.border": "#E74856",
+        "terminal.selectionBackground": "#E74856",
 
         /* IBM Carbon (Gray 10 Schema) -------------------------------------- */
 
