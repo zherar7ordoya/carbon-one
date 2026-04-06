@@ -25,6 +25,8 @@
         "panel.border": "#21272A", // Gray 90
         "panelTitle.activeBorder": "#B8522E",
         "sideBar.border": "#21272A", // Gray 90
+        "tab.activeBackground": "#F4F4F4",
+        "tab.activeBorder": "#F4F4F4", // Gray 10
         "statusBar.border": "#21272A", // Gray 90
         "tab.border": "#21272A", // Gray 90
         "titleBar.border": "#21272A", // Gray 90
@@ -65,7 +67,7 @@
 
         /* IBM Carbon (Gray 10 Schema) -------------------------------------- */
 
-        "editor.background": "#f4f4f4",
+        "editor.background": "#F4F4F4",
         "editor.foreground": "#161616"
     },
 
