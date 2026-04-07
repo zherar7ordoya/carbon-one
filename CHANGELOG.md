@@ -21,13 +21,14 @@ Incorporating insights from **IBM's Carbon Design System** and the elegant econo
 
 ## v2.0 - Carbon One (_November 23, 2025_)
 
--   The original code colorization proposal lacked a coherent environment. Therefore, to achieve a more complete visual identity, I incorporated elements that I felt aligned with the proposed color scheme.
--   For the code colorization palette, additional values ​​(always at level 60) from the IBM Carbon System color palette have been added.
+- The original code colorization proposal lacked a coherent environment. Therefore, to achieve a more complete visual identity, I incorporated elements that I felt aligned with the proposed color scheme.
+- For the code colorization palette, additional values ​​(always at level 60) from the IBM Carbon System color palette have been added.
 
-## v2.0.1 (_To-Do_)
+## v3.0 - Carbon One (_April 26, 2026_)
 
--   Punctuation: turn to black.
--   ...
+- Borders have been added to the editor and terminal to create a more defined workspace and enhance visual separation between different UI elements.
+- React is now the focus of the code colorization palette, with specific colors assigned to JSX tags, attributes, and values to improve readability and distinguish React components from regular JavaScript code.
+- Tags has been revisited to achieve more efficient colorization.
 
 ---
 
