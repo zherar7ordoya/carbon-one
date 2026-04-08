@@ -31,8 +31,8 @@
         "button.background": "#24a148",
         "button.hoverBackground": "#a04828",
 
-        // Yellow 20
-        "editor.lineHighlightBackground": "#fddc69",
+        // Yellow 10
+        "editor.lineHighlightBackground": "#fcf4d6",
 
         /* WINDOWS 12 ------------------------------------------------------- */
 
@@ -98,10 +98,6 @@
                 "meta.brace",
                 "punctuation",
                 "variable.other.object"
-                //"variable.other.object.js",
-                //"variable.other.object.jsx",
-                //"variable.other.object.ts",
-                //"variable.other.object.tsx"
             ],
             "settings": { "foreground": "#161616" }
         },
@@ -115,12 +111,6 @@
                 "entity.name.type.class",
                 "entity.other.inherited-class",
                 "meta.array.literal",
-                /*
-                "meta.array.literal.js variable",
-                "meta.array.literal.jsx variable",
-                "meta.array.literal.ts variable",
-                "meta.array.literal.tsx variable",
-                */
                 "meta.class",
                 "support.class"
             ],
@@ -133,12 +123,9 @@
 
         {
             "scope": [
-                "entity.name.type.interface.ts",
-                "entity.name.type.interface.tsx",
-                "entity.name.type.alias.ts",
-                "entity.name.type.alias.tsx",
-                "meta.type.parameters.ts",
-                "meta.type.parameters.tsx"
+                "entity.name.type.interface",
+                "entity.name.type.alias",
+                "meta.type.parameters"
             ],
             "settings": {
                 "foreground": "#755800"
@@ -156,33 +143,14 @@
                 "keyword.other.unit",
                 "markup.bold",
                 "markup.quote",
-                "meta.array-binding-pattern-variable.js variable.other.readwrite.js",
-                "meta.array-binding-pattern-variable.ts variable.other.readwrite.ts",
-                "meta.array-binding-pattern-variable.tsx variable.other.readwrite.tsx",
+                "meta.array-binding-pattern-variable",
                 "meta.link",
                 "support.constant",
                 "token.warn-token",
                 "variable.other.constant",
-                /*
-                "variable.other.constant.js",
-                "variable.other.constant.jsx",
-                "variable.other.constant.ts",
-                "variable.other.constant.tsx",
-                */
                 "variable.other.constant.object",
-                /*
-                "variable.other.constant.object.js",
-                "variable.other.constant.object.jsx",
-                "variable.other.constant.object.ts",
-                "variable.other.constant.object.tsx",
-                */
-                "variable.other.constant.property"
-                /*
-                "variable.other.constant.property.js",
-                "variable.other.constant.property.jsx",
-                "variable.other.constant.property.ts",
-                "variable.other.constant.property.tsx"
-                */
+                "variable.other.constant.property",
+                "variable.other.readwrite"
             ],
             "settings": {
                 "foreground": "#ba4e00"
@@ -209,65 +177,30 @@
                 "entity.name.tag",
                 "invalid",
                 "keyword.control.anchor.regexp",
-                "keyword.control.default.js",
-                "keyword.control.default.ts",
-                "keyword.control.default.tsx",
+                "keyword.control.default",
                 "keyword.other.directive.using",
                 "keyword.other.operator",
                 "keyword.other.using",
                 "markup.deleted",
                 "markup.heading",
                 "meta.definition.variable",
-                "meta.export.default.js variable.other.readwrite.js",
-                "meta.export.default.ts variable.other.readwrite.ts",
+                "meta.export.default",
                 "meta.object-literal.key.js",
                 "meta.object-literal.key.ts",
                 "source.css variable",
                 "source.ini keyword.other.definition.ini",
-                "source.js support.variable",
                 "source.json meta.structure.dictionary.json > string.quoted.json",
-                "source.ts support.variable",
-                "source.tsx support.variable",
                 "string.other.link",
                 "support.type.object.module",
-                /*
-                "support.type.object.module.js",
-                "support.type.object.module.jsx",
-                "support.type.object.module.ts",
-                "support.type.object.module.tsx",
-                */
                 "support.type.property-name",
                 "support.type.property-name.json",
                 "support.type.vendored.property-name",
+                "support.variable",
                 "support.variable.dom",
-                /*
-                "support.variable.dom.js",
-                "support.variable.dom.jsx",
-                "support.variable.dom.ts",
-                "support.variable.dom.tsx",
-                */
                 "support.variable.property.dom",
-                /*
-                "support.variable.property.dom.js",
-                "support.variable.property.dom.jsx",
-                "support.variable.property.dom.ts",
-                "support.variable.property.dom.tsx",
-                */
                 "support.variable.property",
-                /*
-                "support.variable.property.js",
-                "support.variable.property.jsx",
-                "support.variable.property.ts",
-                "support.variable.property.tsx",
-                */
                 "variable",
                 "variable.other.readwrite.alias"
-                /*
-                "variable.other.readwrite.alias.js",
-                "variable.other.readwrite.alias.jsx",
-                "variable.other.readwrite.alias.ts",
-                "variable.other.readwrite.alias.tsx"
-                */
             ],
             "settings": {
                 "foreground": "#da1e28"
@@ -408,19 +341,7 @@
         /* Blue Hover 60 ---------------------------------------------------- */
 
         {
-            "scope": [
-                "string.template.js",
-                "string.template.jsx",
-                "string.template.ts",
-                "string.template.tsx",
-                "meta.template.expression"
-                /*
-                "meta.template.expression.js",
-                "meta.template.expression.jsx",
-                "meta.template.expression.ts",
-                "meta.template.expression.tsx"
-                */
-            ],
+            "scope": ["string.template", "meta.template.expression"],
             "settings": {
                 "foreground": "#0050e6"
             }
@@ -432,12 +353,6 @@
             "scope": [
                 "constant.character.escape",
                 "constant.language.import-export-all",
-                /*
-                "constant.language.import-export-all.js",
-                "constant.language.import-export-all.jsx",
-                "constant.language.import-export-all.ts",
-                "constant.language.import-export-all.tsx",
-                */
                 "constant.language.json",
                 "constant.other.color",
                 "constant.other.symbol",
@@ -513,12 +428,6 @@
         {
             "scope": [
                 "entity.name.type.module",
-                /*
-                "entity.name.type.module.js",
-                "entity.name.type.module.ts",
-                "entity.name.type.module.jsx",
-                "entity.name.type.module.tsx",
-                */
                 "markup.inline.raw.markdown",
                 "markup.inserted",
                 "markup.raw",
