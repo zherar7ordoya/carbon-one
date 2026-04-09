@@ -1,27 +1,19 @@
 {
     "name": "carbon-one",
     "displayName": "Carbon One",
-    "description": "A light theme for readability based on IBM Carbon Design system and Atom One Light schema.",
-    "version": "2.9.0",
+    "description": "A light theme for readability based on IBM Carbon palette and Atom One schema.",
+    "version": "3.0.0",
     "publisher": "Gerardo-Tordoya",
     "icon": "icon.png",
     "keywords": [
-        "wcag",
-        "contrast",
-        "accessibility",
         "readability",
-        "ibm carbon system",
-        "atom one theme",
+        "accessibility",
+        "contrast",
+        "wcag",
         "grey",
         "albedo",
-        "js",
-        "jsx",
-        "ts",
-        "tsx",
-        "react",
-        "nextjs",
-        "javascript",
-        "typescript"
+        "atom one light",
+        "ibm carbon system"
     ],
     "engines": {
         "vscode": "^1.80.0"
@@ -48,7 +40,7 @@
     },
     "homepage": "https://github.com/zherar7ordoya/carbon-one#readme",
     "devDependencies": {
-        "@vscode/vsce": "^3.7.0"
+        "@vscode/vsce": "^3.7.1"
     },
     "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
 }
