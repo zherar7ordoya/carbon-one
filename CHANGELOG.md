@@ -39,3 +39,4 @@ Incorporating insights from **IBM's Carbon Design System** and the elegant econo
 - Borders have been added to the editor and terminal to create a more defined workspace and enhance visual separation between different UI elements.
 - React is now the focus of the code colorization palette, with specific colors assigned to JSX tags, attributes, and values to improve readability and distinguish React components from regular JavaScript code.
 - Tags has been revisited to achieve more efficient colorization.
+- One goal was the agnosticism of the scope, so the colorization of the tags has been changed to be more general and not specific to a particular language or framework. This allows for better compatibility across different programming languages and environments.
