@@ -1,42 +1,135 @@
-# The Concept
+# Design Philosophy
 
-**_Carbon One_** is considered complete in its conceptual form. Future updates will focus on **incremental refinements** — mainly improved syntax coverage and subtle adjustments for specific languages.
+Carbon One started from a simple observation.
 
-Earlier iterations included **semantic tokens**, but these were ultimately removed due to inconsistent compiler support and the absence of a reliable standard: While they offer theoretical precision, in practice they degrade performance and introduce fragmentation across languages. The current design favors **predictable syntax scopes** and **consistent visual feedback** over speculative automation.
+Under harsh lighting conditions — white office lights, daylight exposure, reflective screens — most light themes become visually fatiguing. Not because of brightness alone, but because of poor contrast distribution and excessive white surfaces.
 
-The foundation is now stable. Any further work will extend —not alter— the theme’s guiding principle: **clarity through constraint**.
+The initial idea came from an old 90s Windows editor: a soft gray background that, despite its simplicity, remained readable for long periods.
 
-# History
+That became the starting point.
 
-The _Carbon One_ project evolved through three distinct stages, each marking a new attempt to reconcile clarity, comfort, and aesthetic restraint in a light coding environment.
+# The Problem
+
+Recreating the gray background was straightforward. Making modern syntax readable on top of it was not.
+
+Older editors dealt with simpler languages. Modern ecosystems — such as C# — introduce significantly more syntax elements: interfaces, generics, annotations, regex, and embedded structures.
+
+A one-to-one color mapping quickly breaks down:
+
+- too many elements
+- too many colors
+- not enough perceptual separation
+
+At that point, the problem shifted from aesthetics to **information density management**.
+
+# Exploration
+
+Several approaches were tested:
+
+- Dyslexia-oriented palette research (Carnegie Mellon), leading to “warm” backgrounds
+- Adaptations of Atom One Light and its ecosystem
+- Iterations toward lower-luminance gray backgrounds
+
+Each improved comfort, but colorization remained inconsistent or insufficiently distinct.
+
+# Turning Point
+
+Two constraints became clear:
+
+1. Colors must remain distinguishable under real lighting conditions
+2. The palette must scale with modern language complexity
+
+Attempts to adapt Atom One Light to WCAG standards caused colors to collapse toward gray.
+
+The solution came from adopting the **IBM Carbon Design System**, which provides a structured and scalable color model.
+
+Carbon One was built on top of that foundation.
+
+# A Structural Issue
+
+Most Atom-based themes evolved through incremental adaptation:
+
+- developers added tokens for their preferred languages
+- scopes accumulated over time
+- color behavior became fragmented
+
+This leads to inconsistency across languages and environments.
+
+# The Decision
+
+Instead of adding more rules, Carbon One removes them.
+
+Token definitions were rewritten to be language-agnostic:
+
+- if a “class” token exists, it applies universally
+- not tied to React, TypeScript, or any specific ecosystem
+
+Redundant and overlapping tokens were eliminated, both in syntax and UI.
+
+This was a minimal intervention with a significant impact.
+
+# Result
+
+The theme now:
+
+- reduces visual noise
+- maintains consistent differentiation
+- works across languages without fragmentation
+- supports long sessions with reduced visual fatigue
+
+It may feel unfamiliar at first.
+It is not intended to replicate the default VSCode experience.
+
+It is designed for **stability over time**.
+
+# A Note on Aesthetics
+
+This theme does not aim for immediate visual appeal.
+
+A painting is observed briefly.
+A development environment is used for hours.
+
+Carbon One prioritizes **endurance over impact**.
+
+# 📜 Development History
 
 ## v0.8 — Gray CLC (_July 4, 2025_)
 
 The initial prototype.
-**Gray CLC** was built around a soft gray background designed for _complex lighting conditions_ — shared offices, overexposed monitors, and sunlight. Its goal was functional clarity above all else.
-This version introduced the principle of **ambient readability**, testing the limits of background neutrality without sacrificing syntax precision.
+
+Built around a soft gray background designed for complex lighting conditions — shared offices, overexposed monitors, and direct sunlight.
+
+This version introduced the concept of **ambient readability**, focusing on background neutrality and functional clarity.
 
 ## v0.9 — Albedo 0.93 (_August 3, 2025_)
 
 The first formal release.
-Here, the design took on its reflective identity: **Albedo 0.93** explored the relationship between luminance and comfort, naming itself after the calculated reflectance of its base color (`#eeeeee`).
-The palette was refined toward WCAG compliance, and the concept of _measured brightness_ became central. This stage established the theoretical foundation for the final work.
+
+Named after the reflectance value of its base color (`#eeeeee`), this version explored the relationship between luminance and visual comfort.
+
+The palette moved toward WCAG compliance, establishing **measured brightness** as a core principle.
 
 ## v1.0 — Carbon One (_October 29, 2025_)
 
 The synthesis.
-Incorporating insights from **IBM's Carbon Design System** and the elegant economy of **Atom's One Light**, _Carbon One_ reached its mature form: a light theme defined not by style but by **visual endurance**. With _JetBrains Mono_ as its typographic core and **subjective legibility** as its guiding principle, it completes a cycle of experimentation that began with a simple gray square.
 
-# Development Log
+Incorporating the structure of the IBM Carbon Design System and the balance of Atom One Light, Carbon One reached a stable conceptual form.
 
-## v2.0 - Carbon One (_November 23, 2025_)
+The focus shifted from aesthetic preference to **visual endurance** and subjective legibility.
 
-- The original code colorization proposal lacked a coherent environment. Therefore, to achieve a more complete visual identity, I incorporated elements that I felt aligned with the proposed color scheme.
-- For the code colorization palette, additional values ​​(always at level 60) from the IBM Carbon System color palette have been added.
+## v2.0 — Carbon One (_November 23, 2025_)
 
-## v3.0 - Carbon One (_April 26, 2026_)
+- The initial colorization lacked a cohesive visual environment
+- UI elements were refined to align with the overall color system
+- The palette was expanded using level 60 values from the IBM Carbon color scale
 
-- Borders have been added to the editor and terminal to create a more defined workspace and enhance visual separation between different UI elements.
-- React is now the focus of the code colorization palette, with specific colors assigned to JSX tags, attributes, and values to improve readability and distinguish React components from regular JavaScript code.
-- Tags has been revisited to achieve more efficient colorization.
-- One goal was the agnosticism of the scope, so the colorization of the tags has been changed to be more general and not specific to a particular language or framework. This allows for better compatibility across different programming languages and environments.
+## v3.0 — Carbon One (_April 10, 2026_)
+
+- Editor and terminal borders were introduced to improve spatial definition and reduce visual blending between UI regions
+- An initial attempt to specialize the palette for React (JS/JSX/TS/TSX) revealed a broader structural issue common in many theme ports
+- Instead of introducing language-specific refinements, token definitions were systematically reviewed and simplified
+- All language-bound assumptions were removed, resulting in a fully **language-agnostic color system**
+- Redundant and overlapping scopes accumulated from previous implementations were eliminated
+- This cleanup improved consistency, predictability, and cross-language coherence without increasing complexity
+
+> The goal shifted from supporting languages to supporting syntax itself.

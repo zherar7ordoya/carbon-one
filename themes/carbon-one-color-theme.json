@@ -145,6 +145,7 @@
                 "entity.other.attribute-name",
                 "keyword.other.unit",
                 "markup.bold",
+                "markup.inline",
                 "markup.quote",
                 "meta.array-binding-pattern-variable",
                 "meta.link",
