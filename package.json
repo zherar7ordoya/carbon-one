@@ -1,19 +1,20 @@
 {
     "name": "carbon-one",
     "displayName": "Carbon One",
-    "description": "A light theme for readability based on IBM Carbon palette and Atom One schema.",
+    "description": "A light theme designed for readability and long-term visual comfort, based on IBM Carbon and inspired by Atom One Light.",
     "version": "3.0.0",
     "publisher": "Gerardo-Tordoya",
     "icon": "icon.png",
     "keywords": [
+        "light theme",
         "readability",
-        "accessibility",
+        "low eye strain",
         "contrast",
-        "wcag",
-        "grey",
-        "albedo",
+        "clean",
+        "minimal",
         "atom one light",
-        "ibm carbon system"
+        "carbon",
+        "accessible"
     ],
     "engines": {
         "vscode": "^1.80.0"

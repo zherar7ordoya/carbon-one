@@ -94,12 +94,7 @@
            Operadores, puntuación y elementos neutros de sintaxis
            ================================================================== */
         {
-            "scope": [
-                "keyword.operator",
-                "meta.brace",
-                "punctuation",
-                "variable.other.object"
-            ],
+            "scope": ["keyword.operator", "meta.brace", "punctuation"],
             "settings": { "foreground": "#161616" }
         },
 
@@ -113,8 +108,6 @@
                 "entity.name.type",
                 "entity.name.type.class",
                 "entity.other.inherited-class",
-                "meta.array.literal",
-                "meta.class",
                 "support.class"
             ],
             "settings": { "foreground": "#8e6a00" }
@@ -126,7 +119,8 @@
             "scope": [
                 "entity.name.type.interface",
                 "entity.name.type.alias",
-                "meta.type.parameters"
+                "meta.type.parameters",
+                "support.type"
             ],
             "settings": {
                 "foreground": "#755800"
@@ -147,23 +141,11 @@
                 "markup.bold",
                 "markup.inline",
                 "markup.quote",
-                "meta.array-binding-pattern-variable",
-                "meta.link",
                 "support.constant",
                 "token.warn-token",
-                "variable.other.constant",
-                "variable.other.readwrite"
+                "variable.other.constant"
             ],
             "settings": { "foreground": "#ba4e00" }
-        },
-
-        /* Orange Hover 60 -------------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#9e4200"
-            }
         },
 
         /* ==================================================================
@@ -173,9 +155,6 @@
         {
             "scope": [
                 "entity.name.tag",
-                "invalid",
-                "keyword.control.default",
-                "keyword.other.operator",
                 "markup.deleted",
                 "markup.heading",
                 "meta.definition.variable",
@@ -190,21 +169,13 @@
             "settings": { "foreground": "#da1e28" }
         },
 
-        /* Red Hover 60 ----------------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#b81922"
-            }
-        },
-
         /* ==================================================================
            ESTADO / DEPURACIÓN (Magenta 60 - #d02670)
            Tokens de error, debug e interpolación
            ================================================================== */
         {
             "scope": [
+                "invalid",
                 "support.other.parenthesis.regexp",
                 "token.debug-token",
                 "token.error-token",
@@ -231,22 +202,11 @@
                 "entity.name.namespace",
                 "entity.other.attribute",
                 "keyword",
-                "keyword.control",
-                "keyword.operator.expression",
                 "markup.changed",
                 "markup.italic",
                 "storage"
             ],
             "settings": { "foreground": "#8a3ffc" }
-        },
-
-        /* Purple Hover 60 -------------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#7822fb"
-            }
         },
 
         /* ==================================================================
@@ -260,7 +220,6 @@
                 "entity.name.function",
                 "entity.name.section",
                 "keyword.other.special-method",
-                "meta.preprocessor",
                 "storage.modifier",
                 "support.function.any-method",
                 "token.info-token",
@@ -287,8 +246,7 @@
                 "constant.character.escape",
                 "constant.other.symbol",
                 "markup.link",
-                "string.regexp",
-                "support.type"
+                "string.regexp"
             ],
             "settings": { "foreground": "#0072c3" }
         },
@@ -307,17 +265,8 @@
            Utilidades y funciones del runtime/lenguaje base
            ================================================================== */
         {
-            "scope": ["meta.preprocessor.numeric", "support.function"],
+            "scope": ["meta.preprocessor.numeric"],
             "settings": { "foreground": "#007d79" }
-        },
-
-        /* Teal Hover 60 ---------------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#006b68"
-            }
         },
 
         /* ==================================================================
@@ -329,33 +278,6 @@
             "settings": { "foreground": "#198038" }
         },
 
-        /* Green Hover 60 --------------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#166f31"
-            }
-        },
-
-        /* Cool Gray 60 ----------------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#697077"
-            }
-        },
-
-        /* Cool Gray Hover 60 ----------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#585e64"
-            }
-        },
-
         /* ==================================================================
            COMENTARIOS (Gray 60 - #6f6f6f)
            Texto no ejecutable, con énfasis visual suave
@@ -365,33 +287,6 @@
             "settings": {
                 "foreground": "#6f6f6f",
                 "fontStyle": "italic"
-            }
-        },
-
-        /* Gray Hover 60 ---------------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#5e5e5e"
-            }
-        },
-
-        /* Warm Gray 60 ----------------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#726e6e"
-            }
-        },
-
-        /* Warm Gray Hover 60 ----------------------------------------------- */
-
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#605d5d"
             }
         }
     ]
