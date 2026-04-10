@@ -245,7 +245,7 @@
             "scope": [
                 "constant.character.escape",
                 "constant.other.symbol",
-                "markup.link",
+                "markup.underline",
                 "string.regexp"
             ],
             "settings": { "foreground": "#0072c3" }
@@ -258,15 +258,6 @@
             "settings": {
                 "foreground": "#005fa3"
             }
-        },
-
-        /* ==================================================================
-           FUNCIONES DE SOPORTE (Teal 60 - #007d79)
-           Utilidades y funciones del runtime/lenguaje base
-           ================================================================== */
-        {
-            "scope": ["meta.preprocessor.numeric"],
-            "settings": { "foreground": "#007d79" }
         },
 
         /* ==================================================================
