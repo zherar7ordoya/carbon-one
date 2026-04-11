@@ -115,6 +115,8 @@
 
         /* Yellow Hover 60 -------------------------------------------------- */
 
+        // ¿LLEVAR ESTOS TOKENS A LA SECCIÓN DE TIPOS / CLASES? (YELLOW 60) ***
+
         {
             "scope": [
                 "entity.name.type.interface",
@@ -138,12 +140,17 @@
                 "constant.variable",
                 "entity.other.attribute-name",
                 "keyword.other.unit",
+                "support.constant",
+                "token.warn-token",
+                "variable.other.constant",
+                //
+                // Markdown Subsystem
                 "markup.bold",
                 "markup.inline",
                 "markup.quote",
-                "support.constant",
-                "token.warn-token",
-                "variable.other.constant"
+                "markup.quoted",
+                "markup.strikethrough",
+                "markup.meta"
             ],
             "settings": { "foreground": "#ba4e00" }
         },
@@ -155,8 +162,6 @@
         {
             "scope": [
                 "entity.name.tag",
-                "markup.deleted",
-                "markup.heading",
                 "meta.definition.variable",
                 "string.other.link",
                 "support.type.property-name",
@@ -164,7 +169,11 @@
                 "support.variable",
                 "support.variable.property",
                 "variable",
-                "variable.other.readwrite.alias"
+                "variable.other.readwrite.alias",
+                //
+                // Markdown Subsystem
+                "markup.deleted",
+                "markup.heading"
             ],
             "settings": { "foreground": "#da1e28" }
         },
@@ -202,9 +211,11 @@
                 "entity.name.namespace",
                 "entity.other.attribute",
                 "keyword",
+                "storage",
+                //
+                // Markdown Subsystem
                 "markup.changed",
-                "markup.italic",
-                "storage"
+                "markup.italic"
             ],
             "settings": { "foreground": "#8a3ffc" }
         },
@@ -245,8 +256,10 @@
             "scope": [
                 "constant.character.escape",
                 "constant.other.symbol",
-                "markup.underline",
-                "string.regexp"
+                "string.regexp",
+                //
+                // Markdown Subsystem
+                "markup.underline"
             ],
             "settings": { "foreground": "#0072c3" }
         },
@@ -265,7 +278,13 @@
            Cadenas de texto y contenido insertado en diffs
            ================================================================== */
         {
-            "scope": ["string", "markup.inserted", "markup.raw"],
+            "scope": [
+                "string",
+                //
+                // Markdown Subsystem
+                "markup.inserted",
+                "markup.raw"
+            ],
             "settings": { "foreground": "#198038" }
         },
 
