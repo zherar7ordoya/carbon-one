@@ -94,7 +94,14 @@
            Operadores, puntuación y elementos neutros de sintaxis
            ================================================================== */
         {
-            "scope": ["keyword.operator", "meta.brace", "punctuation"],
+            "scope": [
+                "keyword.operator",
+                "meta.brace",
+                "punctuation",
+                //
+                // Markdown Subsystem
+                "markup.list"
+            ],
             "settings": { "foreground": "#161616" }
         },
 
@@ -108,9 +115,12 @@
                 "entity.name.type",
                 "entity.name.type.class",
                 "entity.other.inherited-class",
-                "support.class"
+                "support.class",
+                //
+                // Markdown Subsystem
+                "markup.bold"
             ],
-            "settings": { "foreground": "#8e6a00" }
+            "settings": { "foreground": "#8e6a00", "fontStyle": "bold" }
         },
 
         /* Yellow Hover 60 -------------------------------------------------- */
@@ -145,13 +155,9 @@
                 "variable.other.constant",
                 //
                 // Markdown Subsystem
-                "markup.bold",
-                "markup.inline",
                 "markup.quote",
                 "markup.quoted",
-                "markup.strikethrough",
-                "markup.list",
-                "markup.meta"
+                //"markup.meta"
             ],
             "settings": { "foreground": "#ba4e00" }
         },
@@ -164,7 +170,7 @@
             "scope": [
                 "entity.name.tag",
                 "meta.definition.variable",
-                "string.other.link",
+                //"string.other.link",
                 "support.type.property-name",
                 "support.type.vendored.property-name",
                 "support.variable",
@@ -174,7 +180,8 @@
                 //
                 // Markdown Subsystem
                 "markup.deleted",
-                "markup.heading"
+                "markup.heading",
+                "markup.strikethrough"
             ],
             "settings": { "foreground": "#da1e28" }
         },
@@ -218,7 +225,7 @@
                 "markup.changed",
                 "markup.italic"
             ],
-            "settings": { "foreground": "#8a3ffc" }
+            "settings": { "foreground": "#8a3ffc", "fontStyle": "italic" }
         },
 
         /* ==================================================================
@@ -230,12 +237,15 @@
                 "constant.character",
                 "constant.language",
                 "entity.name.function",
-                "entity.name.section",
+                //"entity.name.section",
                 "keyword.other.special-method",
                 "storage.modifier",
                 "support.function.any-method",
                 "token.info-token",
                 "variable.language"
+                //
+                // Markdown Subsystem
+                //"meta.link"
             ],
             "settings": { "foreground": "#0f62fe" }
         },
@@ -283,8 +293,10 @@
                 "string",
                 //
                 // Markdown Subsystem
-                "markup.inserted",
-                "markup.raw"
+                "markup.fenced_code",
+                "markup.inline",
+                "markup.inserted"
+                //"markup.raw"
             ],
             "settings": { "foreground": "#198038" }
         },
