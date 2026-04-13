@@ -150,6 +150,7 @@
                 "markup.quote",
                 "markup.quoted",
                 "markup.strikethrough",
+                "markup.list",
                 "markup.meta"
             ],
             "settings": { "foreground": "#ba4e00" }
