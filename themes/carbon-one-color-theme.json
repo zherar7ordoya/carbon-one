@@ -89,14 +89,10 @@
     /* SYNTAX ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
     "tokenColors": [
-        /* ==================================================================
-           BASE / ESTRUCTURA (Gray 100 - #161616)
-           Operadores, puntuación y elementos neutros de sintaxis
-           ================================================================== */
+        //
+        // Gray 100 ============================================================
         {
             "scope": [
-                "keyword.operator",
-                "meta.brace",
                 "punctuation",
                 //
                 // Markdown Subsystem
@@ -105,17 +101,14 @@
             "settings": { "foreground": "#161616" }
         },
 
-        /* ==================================================================
-           TIPOS / CLASES (Yellow 60 - #8e6a00)
-           Nombres de tipos, clases, interfaces y estructuras de datos
-           ================================================================== */
+        // Yellow 60 ===========================================================
         {
             "scope": [
                 "entity.name.class",
                 "entity.name.type",
-                "entity.name.type.class",
                 "entity.other.inherited-class",
                 "support.class",
+                "support.type",
                 //
                 // Markdown Subsystem
                 "markup.bold"
@@ -123,97 +116,51 @@
             "settings": { "foreground": "#8e6a00", "fontStyle": "bold" }
         },
 
-        /* Yellow Hover 60 -------------------------------------------------- */
-
-        // ¿LLEVAR ESTOS TOKENS A LA SECCIÓN DE TIPOS / CLASES? (YELLOW 60) ***
-
-        {
-            "scope": [
-                "entity.name.type.interface",
-                "entity.name.type.alias",
-                "meta.type.parameters",
-                "support.type"
-            ],
-            "settings": {
-                "foreground": "#755800"
-            }
-        },
-
-        /* ==================================================================
-           CONSTANTES / ATRIBUTOS (Orange 60 - #ba4e00)
-           Valores literales, atributos y variables de solo lectura
-           ================================================================== */
+        // Orange 60 ===========================================================
         {
             "scope": [
                 "constant",
                 "constant.numeric",
                 "constant.variable",
                 "entity.other.attribute-name",
-                "keyword.other.unit",
                 "support.constant",
                 "token.warn-token",
-                "variable.other.constant",
                 //
                 // Markdown Subsystem
-                "markup.quote",
-                "markup.quoted",
-                //"markup.meta"
+                "markup.inline"
             ],
             "settings": { "foreground": "#ba4e00" }
         },
 
-        /* ==================================================================
-           VARIABLES / ETIQUETAS / PROPIEDADES (Red 60 - #da1e28)
-           Elementos identificadores, tags y referencias
-           ================================================================== */
+        // Red 60 ==============================================================
         {
             "scope": [
                 "entity.name.tag",
-                "meta.definition.variable",
-                //"string.other.link",
-                "support.type.property-name",
-                "support.type.vendored.property-name",
                 "support.variable",
-                "support.variable.property",
                 "variable",
-                "variable.other.readwrite.alias",
                 //
                 // Markdown Subsystem
                 "markup.deleted",
-                "markup.heading",
-                "markup.strikethrough"
+                "markup.heading"
             ],
             "settings": { "foreground": "#da1e28" }
         },
 
-        /* ==================================================================
-           ESTADO / DEPURACIÓN (Magenta 60 - #d02670)
-           Tokens de error, debug e interpolación
-           ================================================================== */
+        // Magenta 60 ==========================================================
         {
             "scope": [
+                "constant.regexp",
                 "invalid",
-                "support.other.parenthesis.regexp",
+                "support.other",
                 "token.debug-token",
-                "token.error-token",
-                "variable.interpolation"
+                "token.error-token"
+                //
+                // Markdown Subsystem
             ],
             "settings": { "foreground": "#d02670" }
         },
 
-        /* Magenta Hover 60 ------------------------------------------------- */
-
-        {
-            "scope": ["constant.regexp"],
-            "settings": {
-                "foreground": "#b0215f"
-            }
-        },
-
-        /* ==================================================================
-           PALABRAS CLAVE / CONTROL (Purple 60 - #8a3ffc)
-           Keywords, storage y modificadores de flujo
-           ================================================================== */
+        // Purple 60 ===========================================================
         {
             "scope": [
                 "entity.name.namespace",
@@ -222,91 +169,68 @@
                 "storage",
                 //
                 // Markdown Subsystem
-                "markup.changed",
                 "markup.italic"
             ],
             "settings": { "foreground": "#8a3ffc", "fontStyle": "italic" }
         },
 
-        /* ==================================================================
-           FUNCIONES / MÉTODOS (Blue 60 - #0f62fe)
-           Nombres de funciones, métodos y elementos ejecutables
-           ================================================================== */
+        // Blue 60 =============================================================
         {
             "scope": [
                 "constant.character",
                 "constant.language",
                 "entity.name.function",
-                //"entity.name.section",
-                "keyword.other.special-method",
-                "storage.modifier",
-                "support.function.any-method",
+                "support.function",
                 "token.info-token",
-                "variable.language"
                 //
                 // Markdown Subsystem
-                //"meta.link"
+                "markup.table",
+                "markup.quote",
+                "markup.underline"
             ],
             "settings": { "foreground": "#0f62fe" }
         },
 
-        /* Blue Hover 60 ---------------------------------------------------- */
-
-        {
-            "scope": ["string.template", "meta.template.expression"],
-            "settings": {
-                "foreground": "#0050e6"
-            }
-        },
-
-        /* ==================================================================
-           ESCAPES / REGEX / TIPOS SOPORTE (Cyan 60 - #0072c3)
-           Caracteres de escape, expresiones regulares y tipos genéricos
-           ================================================================== */
+        // Cyan 60 =============================================================
         {
             "scope": [
-                "constant.character.escape",
-                "constant.other.symbol",
-                "string.regexp",
+                "constant.other"
                 //
                 // Markdown Subsystem
-                "markup.underline"
             ],
             "settings": { "foreground": "#0072c3" }
         },
 
-        /* Cyan Hover 60 ---------------------------------------------------- */
-
+        // Teal 60 =============================================================
         {
-            "scope": ["meta.object-literal.key", "variable.other.enummember"],
-            "settings": {
-                "foreground": "#005fa3"
-            }
+            "scope": [
+                //
+                // Markdown Subsystem
+                "markup.fenced_code"
+            ],
+            "settings": { "foreground": "#007d79" }
         },
 
-        /* ==================================================================
-           STRINGS / MARKUP INSERTADO (Green 60 - #198038)
-           Cadenas de texto y contenido insertado en diffs
-           ================================================================== */
+        // Green 60 ============================================================
         {
             "scope": [
                 "string",
                 //
                 // Markdown Subsystem
-                "markup.fenced_code",
-                "markup.inline",
-                "markup.inserted"
-                //"markup.raw"
+                "markup.inserted",
+                "markup.raw"
             ],
             "settings": { "foreground": "#198038" }
         },
 
-        /* ==================================================================
-           COMENTARIOS (Gray 60 - #6f6f6f)
-           Texto no ejecutable, con énfasis visual suave
-           ================================================================== */
+        // Gray 60 =============================================================
         {
-            "scope": ["comment", "punctuation.definition.comment"],
+            "scope": [
+                "comment",
+                //
+                // Markdown Subsystem
+                "markup.strikethrough"
+            ],
             "settings": {
                 "foreground": "#6f6f6f",
                 "fontStyle": "italic"
