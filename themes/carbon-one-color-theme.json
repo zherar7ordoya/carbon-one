@@ -90,12 +90,21 @@
 
     "tokenColors": [
         //
+        // Gray 100 ============================================================
+        {
+            "scope": [
+                "punctuation", // <<< ⭐
+                "variable.parameter"
+                /* Markdown ********* */
+            ],
+            "settings": { "foreground": "#161616" }
+        },
         // Yellow 60 ===========================================================
         {
             "scope": [
                 "entity",
-                //
-                // Markdown Subsystem
+                "support.constant",
+                /* Markdown ********* */
                 "markup.bold"
             ],
             "settings": { "foreground": "#8e6a00" }
@@ -105,9 +114,9 @@
         {
             "scope": [
                 "constant.numeric",
+                "keyword.other",
                 "variable.other.constant",
-                //
-                // Markdown Subsystem
+                /* Markdown ********* */
                 "markup.inline"
             ],
             "settings": { "foreground": "#ba4e00" }
@@ -116,12 +125,12 @@
         // Red 60 ==============================================================
         {
             "scope": [
-                "constant.language",
-                "variable.other.readwrite",
-                //
-                // Markdown Subsystem
-                "markup.deleted",
-                "markup.heading"
+                "entity.name",
+                "support.type",
+                "variable", // <<<<<< ⭐
+                //"variable.other.readwrite",
+                /* Markdown ********* */
+                "markup.deleted"
             ],
             "settings": { "foreground": "#da1e28" }
         },
@@ -129,8 +138,7 @@
         // Magenta 60 ==========================================================
         {
             "scope": [
-                //
-                // Markdown Subsystem
+                /* Markdown ********* */
                 "markup.list"
             ],
             "settings": { "foreground": "#d02670" }
@@ -139,10 +147,9 @@
         // Purple 60 ===========================================================
         {
             "scope": [
-                "keyword",
+                "keyword", // <<<<<<< ⭐
                 "storage",
-                //
-                // Markdown Subsystem
+                /* Markdown ********* */
                 "markup.italic"
             ],
             "settings": { "foreground": "#8a3ffc" }
@@ -151,9 +158,9 @@
         // Blue 60 =============================================================
         {
             "scope": [
-                "support",
-                //
-                // Markdown Subsystem
+                "constant.language",
+                "support.function",
+                /* Markdown ********* */
                 "markup.table",
                 "markup.quote",
                 "markup.underline"
@@ -164,9 +171,18 @@
         // Cyan 60 =============================================================
         {
             "scope": [
-                //
-                // Markdown Subsystem
-                "markup.strikethrough"
+                "number", // <<<<<<<< ⭐
+                "operator", // <<<<<< ⭐
+                "function", // <<<<<< ⭐
+                "type", // <<<<<<<<<< ⭐
+                "class", // <<<<<<<<< ⭐
+                "property", // <<<<<< ⭐
+                /* Markdown ********* */
+                "markup.changed",
+                "markup.heading",
+                "markup.ignored",
+                "markup.strikethrough",
+                "markup.untracked"
             ],
             "settings": { "foreground": "#0072c3" }
         },
@@ -175,7 +191,7 @@
         {
             "scope": [
                 //
-                // Markdown Subsystem
+                /* Markdown ********* */
                 "markup.fenced_code"
             ],
             "settings": { "foreground": "#007d79" }
@@ -184,9 +200,8 @@
         // Green 60 ============================================================
         {
             "scope": [
-                "string",
-                //
-                // Markdown Subsystem
+                "string", // <<<<<<<< ⭐
+                /* Markdown ********* */
                 "markup.inserted",
                 "markup.raw"
             ],
@@ -195,7 +210,9 @@
 
         // Gray 60 =============================================================
         {
-            "scope": ["comment"],
+            "scope": [
+                "comment" // <<<<<<<< ⭐
+            ],
             "settings": {
                 "foreground": "#6f6f6f",
                 "fontStyle": "italic"
