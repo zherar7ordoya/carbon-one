@@ -94,6 +94,8 @@
         {
             "scope": [
                 "punctuation",
+                "variable.object",
+                "variable.other.readwrite",
                 //
                 // Markdown Subsystem
                 "markup.list"
@@ -105,10 +107,8 @@
         {
             "scope": [
                 "entity.name.class",
-                "entity.name.type",
                 "entity.other.inherited-class",
                 "support.class",
-                "support.type",
                 //
                 // Markdown Subsystem
                 "markup.bold"
@@ -122,9 +122,11 @@
                 "constant",
                 "constant.numeric",
                 "constant.variable",
+                "entity.name.type",
                 "entity.other.attribute-name",
                 "support.constant",
                 "token.warn-token",
+                "variable.other.constant",
                 //
                 // Markdown Subsystem
                 "markup.inline"
@@ -137,7 +139,6 @@
             "scope": [
                 "entity.name.tag",
                 "support.variable",
-                "variable",
                 //
                 // Markdown Subsystem
                 "markup.deleted",
@@ -181,6 +182,7 @@
                 "constant.language",
                 "entity.name.function",
                 "support.function",
+                "support.type", // <<<<<<<<<<<<<<<<<<<<<<<  Moved from Yellow 60
                 "token.info-token",
                 //
                 // Markdown Subsystem
