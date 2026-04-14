@@ -90,42 +90,21 @@
 
     "tokenColors": [
         //
-        // Gray 100 ============================================================
-        {
-            "scope": [
-                "punctuation",
-                "variable.object",
-                "variable.other.readwrite",
-                //
-                // Markdown Subsystem
-                "markup.list"
-            ],
-            "settings": { "foreground": "#161616" }
-        },
-
         // Yellow 60 ===========================================================
         {
             "scope": [
-                "entity.name.class",
-                "entity.other.inherited-class",
-                "support.class",
+                "entity",
                 //
                 // Markdown Subsystem
                 "markup.bold"
             ],
-            "settings": { "foreground": "#8e6a00", "fontStyle": "bold" }
+            "settings": { "foreground": "#8e6a00" }
         },
 
         // Orange 60 ===========================================================
         {
             "scope": [
-                "constant",
                 "constant.numeric",
-                "constant.variable",
-                "entity.name.type",
-                "entity.other.attribute-name",
-                "support.constant",
-                "token.warn-token",
                 "variable.other.constant",
                 //
                 // Markdown Subsystem
@@ -137,8 +116,8 @@
         // Red 60 ==============================================================
         {
             "scope": [
-                "entity.name.tag",
-                "support.variable",
+                "constant.language",
+                "variable.other.readwrite",
                 //
                 // Markdown Subsystem
                 "markup.deleted",
@@ -150,13 +129,9 @@
         // Magenta 60 ==========================================================
         {
             "scope": [
-                "constant.regexp",
-                "invalid",
-                "support.other",
-                "token.debug-token",
-                "token.error-token"
                 //
                 // Markdown Subsystem
+                "markup.list"
             ],
             "settings": { "foreground": "#d02670" }
         },
@@ -164,26 +139,19 @@
         // Purple 60 ===========================================================
         {
             "scope": [
-                "entity.name.namespace",
-                "entity.other.attribute",
                 "keyword",
                 "storage",
                 //
                 // Markdown Subsystem
                 "markup.italic"
             ],
-            "settings": { "foreground": "#8a3ffc", "fontStyle": "italic" }
+            "settings": { "foreground": "#8a3ffc" }
         },
 
         // Blue 60 =============================================================
         {
             "scope": [
-                "constant.character",
-                "constant.language",
-                "entity.name.function",
-                "support.function",
-                "support.type", // <<<<<<<<<<<<<<<<<<<<<<<  Moved from Yellow 60
-                "token.info-token",
+                "support",
                 //
                 // Markdown Subsystem
                 "markup.table",
@@ -196,9 +164,9 @@
         // Cyan 60 =============================================================
         {
             "scope": [
-                "constant.other"
                 //
                 // Markdown Subsystem
+                "markup.strikethrough"
             ],
             "settings": { "foreground": "#0072c3" }
         },
@@ -227,12 +195,7 @@
 
         // Gray 60 =============================================================
         {
-            "scope": [
-                "comment",
-                //
-                // Markdown Subsystem
-                "markup.strikethrough"
-            ],
+            "scope": ["comment"],
             "settings": {
                 "foreground": "#6f6f6f",
                 "fontStyle": "italic"
