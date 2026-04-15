@@ -93,7 +93,7 @@
         // Gray 100 ============================================================
         {
             "scope": [
-                "punctuation", // <<< ⭐
+                "punctuation",
                 "variable.parameter"
                 /* Markdown ********* */
             ],
@@ -102,7 +102,8 @@
         // Yellow 60 ===========================================================
         {
             "scope": [
-                "entity",
+                "entity.name.type",
+                "entity.other",
                 "support.constant",
                 /* Markdown ********* */
                 "markup.bold"
@@ -127,8 +128,9 @@
             "scope": [
                 "entity.name",
                 "support.type",
-                "variable", // <<<<<< ⭐
-                //"variable.other.readwrite",
+                "variable",
+                "variable.other",
+                "variable.parameter",
                 /* Markdown ********* */
                 "markup.deleted"
             ],
@@ -159,6 +161,7 @@
         {
             "scope": [
                 "constant.language",
+                "entity.name.function",
                 "support.function",
                 /* Markdown ********* */
                 "markup.table",
