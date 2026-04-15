@@ -90,132 +90,68 @@
 
     "tokenColors": [
         //
-        // Gray 100 ============================================================
+        // Gray 100 =========================================================(0)
         {
-            "scope": [
-                "punctuation",
-                "variable.parameter"
-                /* Markdown ********* */
-            ],
+            "scope": [],
             "settings": { "foreground": "#161616" }
         },
-        // Yellow 60 ===========================================================
+        // Yellow 60 ========================================================(1)
         {
-            "scope": [
-                "entity.name.type",
-                "entity.other",
-                "support.constant",
-                /* Markdown ********* */
-                "markup.bold"
-            ],
+            "scope": [],
             "settings": { "foreground": "#8e6a00" }
         },
 
-        // Orange 60 ===========================================================
+        // Orange 60 ========================================================(2)
         {
-            "scope": [
-                "constant.numeric",
-                "keyword.other",
-                "variable.other.constant",
-                /* Markdown ********* */
-                "markup.inline"
-            ],
+            "scope": [],
             "settings": { "foreground": "#ba4e00" }
         },
 
-        // Red 60 ==============================================================
+        // Red 60 ===========================================================(3)
         {
-            "scope": [
-                "entity.name",
-                "support.type",
-                "variable",
-                "variable.other",
-                "variable.parameter",
-                /* Markdown ********* */
-                "markup.deleted"
-            ],
+            "scope": [],
             "settings": { "foreground": "#da1e28" }
         },
 
-        // Magenta 60 ==========================================================
+        // Magenta 60 =======================================================(4)
         {
-            "scope": [
-                /* Markdown ********* */
-                "markup.list"
-            ],
+            "scope": [],
             "settings": { "foreground": "#d02670" }
         },
 
-        // Purple 60 ===========================================================
+        // Purple 60 ========================================================(5)
         {
-            "scope": [
-                "keyword", // <<<<<<< ⭐
-                "storage",
-                /* Markdown ********* */
-                "markup.italic"
-            ],
+            "scope": [],
             "settings": { "foreground": "#8a3ffc" }
         },
 
-        // Blue 60 =============================================================
+        // Blue 60 ==========================================================(6)
         {
-            "scope": [
-                "constant.language",
-                "entity.name.function",
-                "support.function",
-                /* Markdown ********* */
-                "markup.table",
-                "markup.quote",
-                "markup.underline"
-            ],
+            "scope": [],
             "settings": { "foreground": "#0f62fe" }
         },
 
-        // Cyan 60 =============================================================
+        // Cyan 60 ==========================================================(7)
         {
-            "scope": [
-                "number", // <<<<<<<< ⭐
-                "operator", // <<<<<< ⭐
-                "function", // <<<<<< ⭐
-                "type", // <<<<<<<<<< ⭐
-                "class", // <<<<<<<<< ⭐
-                "property", // <<<<<< ⭐
-                /* Markdown ********* */
-                "markup.changed",
-                "markup.heading",
-                "markup.ignored",
-                "markup.strikethrough",
-                "markup.untracked"
-            ],
+            "scope": [],
             "settings": { "foreground": "#0072c3" }
         },
 
-        // Teal 60 =============================================================
+        // Teal 60 ==========================================================(8)
         {
-            "scope": [
-                //
-                /* Markdown ********* */
-                "markup.fenced_code"
-            ],
+            "scope": [],
             "settings": { "foreground": "#007d79" }
         },
 
-        // Green 60 ============================================================
+        // Green 60 =========================================================(9)
         {
-            "scope": [
-                "string", // <<<<<<<< ⭐
-                /* Markdown ********* */
-                "markup.inserted",
-                "markup.raw"
-            ],
+            "scope": [],
             "settings": { "foreground": "#198038" }
         },
 
-        // Gray 60 =============================================================
+        // Gray 60 =========================================================(10)
         {
-            "scope": [
-                "comment" // <<<<<<<< ⭐
-            ],
+            "scope": [],
             "settings": {
                 "foreground": "#6f6f6f",
                 "fontStyle": "italic"
