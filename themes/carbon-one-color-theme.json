@@ -92,38 +92,42 @@
         //
         // Gray 100 =========================================================(0)
         {
-            "scope": ["variable.other.readwrite"],
+            "scope": [],
             "settings": { "foreground": "#161616" }
         },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#383A42" }
+        },
+
         // Yellow 60 ========================================================(1)
         {
-            "scope": ["entity.name.type", "entity.other"],
+            "scope": [],
             "settings": { "foreground": "#8e6a00" }
+        },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#986801" }
         },
 
         // Orange 60 ========================================================(2)
         {
-            "scope": [
-                "constant.language.boolean.true",
-                "constant.language.null",
-                "constant.language.undefined",
-                "constant.numeric",
-                "variable.other.constant"
-            ],
+            "scope": [],
             "settings": { "foreground": "#ba4e00" }
+        },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#C18401" }
         },
 
         // Red 60 ===========================================================(3)
         {
-            "scope": [
-                "variable.language.super",
-                "variable.language.this",
-                "variable.other.enummember",
-                "variable.other.object",
-                "variable.other.property",
-                "variable.other.readwrite.alias"
-            ],
+            "scope": ["variable.other.readwrite.alias"],
             "settings": { "foreground": "#da1e28" }
+        },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#E45649" }
         },
 
         // Magenta 60 =======================================================(4)
@@ -131,20 +135,23 @@
             "scope": [],
             "settings": { "foreground": "#d02670" }
         },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#CA1243" }
+        },
 
         // Purple 60 ========================================================(5)
         {
             "scope": [
                 "keyword.control.export",
-                "keyword.control.flow",
                 "keyword.control.from",
-                "keyword.control.import",
-                "keyword.control.type",
-                "keyword.operator.expression.in",
-                "storage.modifier",
-                "storage.type"
+                "keyword.control.import"
             ],
             "settings": { "foreground": "#8a3ffc" }
+        },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#A626A4" }
         },
 
         // Blue 60 ==========================================================(6)
@@ -152,15 +159,19 @@
             "scope": [],
             "settings": { "foreground": "#0f62fe" }
         },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#4078F2" }
+        },
 
         // Cyan 60 ==========================================================(7)
         {
-            "scope": [
-                "entity.name.function",
-                "support.type.builtin",
-                "support.type.primitive"
-            ],
+            "scope": [],
             "settings": { "foreground": "#0072c3" }
+        },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#0184BC" }
         },
 
         // Teal 60 ==========================================================(8)
@@ -168,24 +179,36 @@
             "scope": [],
             "settings": { "foreground": "#007d79" }
         },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#A0A1A7" }
+        },
 
         // Green 60 =========================================================(9)
         {
-            "scope": ["string.quoted.double", "string.template"],
+            "scope": ["string.quoted.double"],
             "settings": { "foreground": "#198038" }
+        },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#50A14F" }
         },
 
         // Gray 60 =========================================================(10)
         {
             "scope": [
-                "punctuation.definition.comment",
                 "comment.block.documentation",
-                "comment.line.double-slash"
+                "comment.line.double-slash",
+                "punctuation.definition.comment"
             ],
             "settings": {
                 "foreground": "#6f6f6f",
                 "fontStyle": "italic"
             }
+        },
+        {
+            "scope": ["ATOM.ONE.LIGHT"],
+            "settings": { "foreground": "#696C77" }
         }
     ]
 }
