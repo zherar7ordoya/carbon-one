@@ -92,24 +92,37 @@
         //
         // Gray 100 =========================================================(0)
         {
-            "scope": [],
+            "scope": ["variable.other.readwrite"],
             "settings": { "foreground": "#161616" }
         },
         // Yellow 60 ========================================================(1)
         {
-            "scope": [],
+            "scope": ["entity.name.type", "entity.other"],
             "settings": { "foreground": "#8e6a00" }
         },
 
         // Orange 60 ========================================================(2)
         {
-            "scope": [],
+            "scope": [
+                "constant.language.boolean.true",
+                "constant.language.null",
+                "constant.language.undefined",
+                "constant.numeric",
+                "variable.other.constant"
+            ],
             "settings": { "foreground": "#ba4e00" }
         },
 
         // Red 60 ===========================================================(3)
         {
-            "scope": [],
+            "scope": [
+                "variable.language.super",
+                "variable.language.this",
+                "variable.other.enummember",
+                "variable.other.object",
+                "variable.other.property",
+                "variable.other.readwrite.alias"
+            ],
             "settings": { "foreground": "#da1e28" }
         },
 
@@ -121,7 +134,16 @@
 
         // Purple 60 ========================================================(5)
         {
-            "scope": [],
+            "scope": [
+                "keyword.control.export",
+                "keyword.control.flow",
+                "keyword.control.from",
+                "keyword.control.import",
+                "keyword.control.type",
+                "keyword.operator.expression.in",
+                "storage.modifier",
+                "storage.type"
+            ],
             "settings": { "foreground": "#8a3ffc" }
         },
 
@@ -133,7 +155,11 @@
 
         // Cyan 60 ==========================================================(7)
         {
-            "scope": [],
+            "scope": [
+                "entity.name.function",
+                "support.type.builtin",
+                "support.type.primitive"
+            ],
             "settings": { "foreground": "#0072c3" }
         },
 
@@ -145,13 +171,17 @@
 
         // Green 60 =========================================================(9)
         {
-            "scope": [],
+            "scope": ["string.quoted.double", "string.template"],
             "settings": { "foreground": "#198038" }
         },
 
         // Gray 60 =========================================================(10)
         {
-            "scope": [],
+            "scope": [
+                "punctuation.definition.comment",
+                "comment.block.documentation",
+                "comment.line.double-slash"
+            ],
             "settings": {
                 "foreground": "#6f6f6f",
                 "fontStyle": "italic"
