@@ -92,7 +92,11 @@
         //
         // Gray 100 =========================================================(0)
         {
-            "scope": ["support.type.primitive", "variable.other.readwrite"],
+            "scope": [
+                "punctuation",
+                "variable.other.readwrite",
+                "variable.parameter"
+            ],
             "settings": { "foreground": "#161616" }
         },
         {
@@ -103,17 +107,14 @@
         // Yellow 60 ========================================================(1)
         {
             "scope": [
-                "constant.language.boolean.false",
-                "constant.language.boolean.true",
-                "constant.language.null",
-                "constant.language.undefined",
-                "constant.numeric",
-                "constant.numeric.decimal",
+                "constant",
                 "entity.other.attribute-name",
-                "keyword.other.unit.px",
-                "keyword.other.unit.rem",
+                "markup.bold",
+                "keyword.other.unit",
+                "punctuation.definition.bold",
                 "punctuation.definition.constant",
-                "support.constant.font-name",
+                "punctuation.definition.link",
+                "support.constant",
                 "variable.other.constant"
             ],
             "settings": { "foreground": "#8e6a00" }
@@ -130,7 +131,7 @@
                 "entity.name.type.alias",
                 "entity.name.type.interface",
                 "entity.other.inherited-class",
-                "support.class.promise"
+                "support.class"
             ],
             "settings": { "foreground": "#ba4e00" }
         },
@@ -142,14 +143,18 @@
         // Red 60 ===========================================================(3)
         {
             "scope": [
+                "entity.name.section",
                 "entity.name.tag",
-                "support.variable.property",
+                "keyword.other.definition",
+                "markup.deleted",
+                "punctuation.definition.heading",
+                "source",
+                "string.other.link.description",
+                "support.type.property-name",
+                "support.variable",
                 "variable",
-                "variable.language.super",
-                "variable.language.this",
-                "variable.other.enummember",
-                "variable.other.object",
-                "variable.other.property",
+                "variable.language",
+                "variable.other",
                 "variable.other.readwrite.alias"
             ],
             "settings": { "foreground": "#da1e28" }
@@ -161,7 +166,11 @@
 
         // Magenta 60 =======================================================(4)
         {
-            "scope": [],
+            "scope": [
+                "punctuation.definition",
+                "punctuation.section.embedded",
+                "variable.interpolation"
+            ],
             "settings": { "foreground": "#d02670" }
         },
         {
@@ -172,19 +181,17 @@
         // Purple 60 ========================================================(5)
         {
             "scope": [
-                "keyword.control.conditional",
-                "keyword.control.export",
-                "keyword.control.flow",
-                "keyword.control.from",
-                "keyword.control.import",
-                "keyword.control.loop",
-                "keyword.control.switch",
-                "keyword.control.trycatch",
-                "keyword.control.type",
+                "keyword.control",
                 "keyword.other",
                 "storage.modifier",
-                "keyword.operator.expression.in",
+                "keyword.operator.expression",
                 "keyword.operator.new",
+                "markup.italic",
+                "markup.underline",
+                "punctuation.definition.entity",
+                "punctuation.definition.italic",
+                "punctuation.definition.metadata",
+                "punctuation.section",
                 "storage.type"
             ],
             "settings": { "foreground": "#8a3ffc" }
@@ -196,7 +203,7 @@
 
         // Blue 60 ==========================================================(6)
         {
-            "scope": ["entity.name.function"],
+            "scope": ["entity.name.function", "string.other.link.title"],
             "settings": { "foreground": "#0f62fe" }
         },
         {
@@ -207,18 +214,13 @@
         // Cyan 60 ==========================================================(7)
         {
             "scope": [
-                "constant.other.color.rgb-value.hex",
-                "keyword.operator.assignment",
-                "keyword.operator.arithmetic",
-                "keyword.operator.expression.keyof",
-                "keyword.operator.increment",
-                "keyword.operator.logical",
-                "keyword.operator.relational",
-                "keyword.operator.type",
-                "keyword.operator.type.annotation",
+                "constant.character",
+                "constant.language",
+                "constant.other",
+                "keyword.operator",
                 "storage.type.property",
                 "string.regexp",
-                "support.function.misc",
+                "support.function",
                 "support.type.builtin",
                 "support.type.primitive"
             ],
@@ -231,7 +233,16 @@
 
         // Teal 60 ==========================================================(8)
         {
-            "scope": [],
+            "scope": [
+                "markup.changed",
+                "markup.heading",
+                "markup.inline",
+                "markup.link",
+                "markup.list",
+                "markup.raw",
+                "markup.table",
+                "markup.untracked"
+            ],
             "settings": { "foreground": "#007d79" }
         },
         {
@@ -243,7 +254,9 @@
         {
             "scope": [
                 "entity.name.type.module",
-                "string.quoted.double",
+                "markup.inserted",
+                "string.quoted",
+                "string.unquoted",
                 "string.template"
             ],
             "settings": { "foreground": "#198038" }
@@ -257,9 +270,10 @@
         {
             "scope": [
                 "comment.block",
-                "comment.block.documentation",
-                "comment.line.double-slash",
-                "punctuation.definition.comment"
+                "comment.line",
+                "markup.quote",
+                "punctuation.definition.comment",
+                "punctuation.definition.quote"
             ],
             "settings": {
                 "foreground": "#6f6f6f",
