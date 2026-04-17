@@ -31,8 +31,8 @@
         "button.background": "#24a148",
         "button.hoverBackground": "#a04828",
 
-        // Yellow 10 Hover
-        "editor.lineHighlightBackground": "#f8e6a0",
+        // Yellow 10
+        "editor.lineHighlightBackground": "#fcf4d6",
 
         /* WINDOWS 12 ------------------------------------------------------- */
 
@@ -92,7 +92,7 @@
         //
         // Gray 100 =========================================================(0)
         {
-            "scope": [],
+            "scope": ["support.type.primitive", "variable.other.readwrite"],
             "settings": { "foreground": "#161616" }
         },
         {
@@ -102,7 +102,20 @@
 
         // Yellow 60 ========================================================(1)
         {
-            "scope": [],
+            "scope": [
+                "constant.language.boolean.false",
+                "constant.language.boolean.true",
+                "constant.language.null",
+                "constant.language.undefined",
+                "constant.numeric",
+                "constant.numeric.decimal",
+                "entity.other.attribute-name",
+                "keyword.other.unit.px",
+                "keyword.other.unit.rem",
+                "punctuation.definition.constant",
+                "support.constant.font-name",
+                "variable.other.constant"
+            ],
             "settings": { "foreground": "#8e6a00" }
         },
         {
@@ -112,7 +125,13 @@
 
         // Orange 60 ========================================================(2)
         {
-            "scope": [],
+            "scope": [
+                "entity.name.type",
+                "entity.name.type.alias",
+                "entity.name.type.interface",
+                "entity.other.inherited-class",
+                "support.class.promise"
+            ],
             "settings": { "foreground": "#ba4e00" }
         },
         {
@@ -122,7 +141,17 @@
 
         // Red 60 ===========================================================(3)
         {
-            "scope": ["variable.other.readwrite.alias"],
+            "scope": [
+                "entity.name.tag",
+                "support.variable.property",
+                "variable",
+                "variable.language.super",
+                "variable.language.this",
+                "variable.other.enummember",
+                "variable.other.object",
+                "variable.other.property",
+                "variable.other.readwrite.alias"
+            ],
             "settings": { "foreground": "#da1e28" }
         },
         {
@@ -143,9 +172,20 @@
         // Purple 60 ========================================================(5)
         {
             "scope": [
+                "keyword.control.conditional",
                 "keyword.control.export",
+                "keyword.control.flow",
                 "keyword.control.from",
-                "keyword.control.import"
+                "keyword.control.import",
+                "keyword.control.loop",
+                "keyword.control.switch",
+                "keyword.control.trycatch",
+                "keyword.control.type",
+                "keyword.other",
+                "storage.modifier",
+                "keyword.operator.expression.in",
+                "keyword.operator.new",
+                "storage.type"
             ],
             "settings": { "foreground": "#8a3ffc" }
         },
@@ -156,7 +196,7 @@
 
         // Blue 60 ==========================================================(6)
         {
-            "scope": [],
+            "scope": ["entity.name.function"],
             "settings": { "foreground": "#0f62fe" }
         },
         {
@@ -166,7 +206,22 @@
 
         // Cyan 60 ==========================================================(7)
         {
-            "scope": [],
+            "scope": [
+                "constant.other.color.rgb-value.hex",
+                "keyword.operator.assignment",
+                "keyword.operator.arithmetic",
+                "keyword.operator.expression.keyof",
+                "keyword.operator.increment",
+                "keyword.operator.logical",
+                "keyword.operator.relational",
+                "keyword.operator.type",
+                "keyword.operator.type.annotation",
+                "storage.type.property",
+                "string.regexp",
+                "support.function.misc",
+                "support.type.builtin",
+                "support.type.primitive"
+            ],
             "settings": { "foreground": "#0072c3" }
         },
         {
@@ -186,7 +241,11 @@
 
         // Green 60 =========================================================(9)
         {
-            "scope": ["string.quoted.double"],
+            "scope": [
+                "entity.name.type.module",
+                "string.quoted.double",
+                "string.template"
+            ],
             "settings": { "foreground": "#198038" }
         },
         {
@@ -197,6 +256,7 @@
         // Gray 60 =========================================================(10)
         {
             "scope": [
+                "comment.block",
                 "comment.block.documentation",
                 "comment.line.double-slash",
                 "punctuation.definition.comment"
