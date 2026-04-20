@@ -96,6 +96,7 @@
                 "punctuation.definition.tag",
                 "support.constant.property-value", // Needed because support.constant in Yellow 60 (1) prevails.
                 "variable.object",
+                "variable.other.object",
                 "variable.other.readwrite", // Needed for ...readwrite.alias in Red 60 (3)
                 "variable.parameter"
             ],
@@ -110,7 +111,6 @@
         {
             "scope": [
                 "constant", // Depht 1 needed because constant.numeric is not enough.
-                "constant.language",
                 "entity.other.attribute-name",
                 "markup.bold",
                 "keyword.other.unit",
@@ -131,10 +131,9 @@
         {
             "scope": [
                 "entity.name.type",
-                //"entity.name.type.alias", /* Depht 4 : review! */
-                //"entity.name.type.interface", /* Depht 4 : review! */
                 "entity.other.inherited-class",
-                "support.class"
+                "support.class",
+                "variable.other.property"
             ],
             "settings": { "foreground": "#ba4e00" }
         },
@@ -151,14 +150,11 @@
                 "keyword.other.definition",
                 "markup.deleted",
                 "punctuation.definition.heading",
-                //"source", /* Depht 1 : review! */
-                //"string.other.link.description", // Depht 4: review!
-                "support.type.property-name", // Needed because support.type in Cyan 60 (7) prevails.
+                "support.type.property-name", // Needed: 1) support.type (Cyan 60) prevails, 2) JSON needs it in Red 60.
                 "support.variable",
-                //"variable", /* Depht 1 : review! */
-                "variable.language",
-                "variable.other",
-                "variable.other.readwrite.alias" // Depht 4 needed for readwrite Gray 100 (0)
+                "variable", // Depht 1 needed because variable in Red 60 (3) prevails.
+                "variable.other.object.property", // Depht 4 needed for "other.object" in Gray 100.
+                "variable.other.readwrite.alias" // Depht 4 needed for "readwrite" in Gray 100.
             ],
             "settings": { "foreground": "#da1e28" }
         },
@@ -194,7 +190,6 @@
                 "punctuation.definition.entity",
                 "punctuation.definition.italic",
                 "punctuation.definition.metadata",
-                "punctuation.section",
                 "storage.type"
             ],
             "settings": { "foreground": "#8a3ffc" }
@@ -206,10 +201,7 @@
 
         // Blue 60 ==========================================================(6)
         {
-            "scope": [
-                "entity.name.function"
-                //"string.other.link.title" /* Depht 1 : review! */
-            ],
+            "scope": ["entity.name.function"],
             "settings": { "foreground": "#0f62fe" }
         },
         {
@@ -221,14 +213,13 @@
         {
             "scope": [
                 "constant.character",
+                "constant.language", // Because JSON needs it in Cyan 60.
                 "constant.other",
                 "keyword.operator",
                 "storage.type.property",
                 "string.regexp",
                 "support.function",
                 "support.type"
-                //"support.type.builtin",
-                //"support.type.primitive"
             ],
             "settings": { "foreground": "#0072c3" }
         },
