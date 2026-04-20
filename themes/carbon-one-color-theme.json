@@ -93,7 +93,8 @@
         // Gray 100 =========================================================(0)
         {
             "scope": [
-                // "punctuation", /* Depht 1 : review! */
+                "punctuation.definition.tag",
+                "support.constant.property-value", // Needed because support.constant in Yellow 60 (1) prevails.
                 "variable.object",
                 "variable.other.readwrite", // Needed for ...readwrite.alias in Red 60 (3)
                 "variable.parameter"
@@ -152,7 +153,7 @@
                 "punctuation.definition.heading",
                 //"source", /* Depht 1 : review! */
                 //"string.other.link.description", // Depht 4: review!
-                "support.type.property-name",
+                "support.type.property-name", // Needed because support.type in Cyan 60 (7) prevails.
                 "support.variable",
                 //"variable", /* Depht 1 : review! */
                 "variable.language",
@@ -225,8 +226,9 @@
                 "storage.type.property",
                 "string.regexp",
                 "support.function",
-                "support.type.builtin",
-                "support.type.primitive"
+                "support.type"
+                //"support.type.builtin",
+                //"support.type.primitive"
             ],
             "settings": { "foreground": "#0072c3" }
         },
@@ -257,7 +259,7 @@
         // Green 60 =========================================================(9)
         {
             "scope": [
-                //"entity.name.type.module", /* Depht 1 : review! */
+                "entity.name.type.module", // Depht 4 needed because default for entity.name.type is Orange 60 (2)
                 "markup.inserted",
                 "string.quoted",
                 "string.unquoted",
