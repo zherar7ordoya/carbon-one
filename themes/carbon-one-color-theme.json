@@ -46,7 +46,7 @@
 
         // WARM BURNOUT
         "activityBar.border": "#B5BBE7",
-        "editorGroupHeader.tabsBackground": "#B5BBE7",
+        "editorGroupHeader.tabsBackground": "#B5BBE7", // <<<===
         "focusBorder": "#EDE6DA",
         "inputOption.activeForeground": "#B8522E",
         "input.background": "#EDE6DA",
