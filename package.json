@@ -4,7 +4,7 @@
     "description": "A WCAG light theme based on IBM Carbon Design color palette and Atom One Light color scheme.",
     "version": "3.1.2",
     "publisher": "Gerardo-Tordoya",
-    "icon": "icon.png",
+    "icon": "./assets/icon.png",
     "keywords": [
         "light theme",
         "readability",

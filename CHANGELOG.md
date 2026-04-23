@@ -22,4 +22,4 @@
 
 ## v0.8 — July 4, 2025
 
-- Initial prototype with soft gray background (Gray CLC)
+- Initial prototype with soft gray background (Gray CLC - Complex Light Conditions)
