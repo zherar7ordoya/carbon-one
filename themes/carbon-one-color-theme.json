@@ -57,7 +57,8 @@
 
         /* CAMPBELL POWERSHELL ---------------------------------------------- */
 
-        "terminal.ansiBlack": "#0C0C0C",
+        //"terminal.ansiBlack": "#0C0C0C", /* Color de limpieza */
+        "terminal.ansiBlack": "#012456",
         "terminal.ansiBlue": "#0037DA",
         "terminal.ansiBrightBlack": "#767676",
         "terminal.ansiBrightBlue": "#3B78FF",
