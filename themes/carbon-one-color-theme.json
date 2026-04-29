@@ -151,6 +151,7 @@
                 "keyword.other.definition",
                 "markup.deleted",
                 "punctuation.definition.heading",
+                "support.type.object", // Needed: support.type (Cyan 60) prevails
                 "support.type.property-name", // Needed: 1) support.type (Cyan 60) prevails, 2) JSON needs it in Red 60.
                 "support.variable",
                 "variable", // Depht 1 needed because variable in Red 60 (3) prevails.
