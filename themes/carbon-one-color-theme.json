@@ -27,6 +27,9 @@
         "tab.activeBackground": "#F4F4F4",
         "tab.activeBorder": "#F4F4F4",
 
+        // Warm Gray 20
+        "tab.inactiveBackground": "#e0e0e0",
+
         // Green 50 + Warm Burnout
         "button.background": "#24a148",
         "button.hoverBackground": "#a04828",
